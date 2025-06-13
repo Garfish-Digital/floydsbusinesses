@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional plumbing services for residential and commercial properties in Indianapolis." />
+  <meta name="author" content="Floyd Plumbing" />
+  <meta property="og:title" content="Floyd's Plumbing Services" />
+  <meta property="og:description" content="Expert plumbing solutions with honest pricing and reliable service." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="preview.jpg" />
+  <meta name="theme-color" content="#1a1a1a" />
+  <title>Floyd's Plumbing Services</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="antialiased">
+  <!-- Custom Cursor Element -->
+  <div id="cursor" class="custom-cursor hidden md:block"></div>
+
+  <!-- HERO SECTION -->
+  <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
+
+    <!-- Background Video - Professional plumbing work -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/clips/hero-faucet-clip.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 px-6 md:px-12 max-w-3xl">
+      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white drop-shadow-lg">
+        Price Right Plumbing
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300 mb-8">
+        Expert service for homes and businesses with transparent pricing and reliable results.
+      </p>
+      <a href="#portfolio"
+        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+        View Our Work
+      </a>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO SECTION -->
+  <section id="portfolio" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
+
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <div data-reveal class="reveal">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Recent Projects</h2>
+        <p class="text-gray-400 text-lg">Quality workmanship across residential and commercial properties.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Portfolio Items -->
+      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+        <video id="video1" class="w-full h-[28rem] object-cover rounded" poster="assets/images/portfolio-1-poster.jpg"
+          preload="metadata" playsinline>
+          <source src="assets/clips/portfolio-1-clip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Optional Play Button Overlay -->
+        <div onclick="togglePlay('video1')"
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+          <span class="text-white text-4xl font-bold">▶</span>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+        <video id="video2" class="w-full h-[28rem] object-cover rounded" poster="assets/images/portfolio-2-poster.jpg"
+          preload="metadata" playsinline>
+          <source src="assets/clips/portfolio-2-clip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Optional Play Button Overlay -->
+        <div onclick="togglePlay('video2')"
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+          <span class="text-white text-4xl font-bold">▶</span>
+        </div>
+      </div>
+
+      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+        <video id="video3" class="w-full h-[28rem] object-cover rounded" poster="assets/images/portfolio-3-poster.jpg"
+          preload="metadata" playsinline>
+          <source src="assets/clips/portfolio-3-clip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <!-- Optional Play Button Overlay -->
+        <div onclick="togglePlay('video3')"
+          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+          <span class="text-white text-4xl font-bold">▶</span>
+        </div>
+      </div>
+
+      <!-- Add more portfolio items as needed -->
+    </div>
+  </section>
+
+  <!-- SERVICES & PRICING SECTION -->
+  <section id="services" class="bg-[#121212] py-16 px-6 md:px-12">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+      <div data-reveal class="reveal">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Services & Pricing</h2>
+        <p class="text-gray-400 text-lg">Professional plumbing services for every need. Upfront pricing with no hidden fees.</p>
+      </div>
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+      <!-- Service Card -->
+      <div
+        class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
+        <h3 class="text-xl font-semibold text-white mb-2">Emergency Repairs</h3>
+        <p class="text-gray-400 mb-4">24/7 emergency service, leak repairs, pipe bursts, drain clearing.</p>
+        <p class="text-white font-bold text-lg mb-4">Starting at $150</p>
+        <a href="#contact"
+          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Call Now</a>
+      </div>
+
+      <div
+        class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
+        <h3 class="text-xl font-semibold text-white mb-2">Bathroom Remodel</h3>
+        <p class="text-gray-400 mb-4">Complete bathroom renovation, fixture installation, custom plumbing layout.</p>
+        <p class="text-white font-bold text-lg mb-4">$2,500+</p>
+        <a href="#contact"
+          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Get Quote</a>
+      </div>
+
+      <div
+        class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
+        <h3 class="text-xl font-semibold text-white mb-2">Routine Maintenance</h3>
+        <p class="text-gray-400 mb-4">Water heater service, pipe inspections, preventive maintenance plans.</p>
+        <p class="text-white font-bold text-lg mb-4">Starting at $95</p>
+        <a href="#contact"
+          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Schedule Service</a>
+      </div>
+    </div>
+  </section>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
+    <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-center">
+
+
+      <!-- Style Visual + Social Proof -->
+      <div class="flex flex-col items-center md:items-start text-center md:text-right">
+        <img src="assets/images/floyd-himself.jpg" alt="Floyd Williams Master Plumber" id="plumber-img"
+          class="w-64 h-64 object-cover rounded-full border-4 border-[#22c55e] mb-6 shadow-lg" />
+        <div data-reveal class="reveal">
+          <div class="text-sm text-gray-400 italic max-w-md">
+            "Floyd saved our kitchen renovation when another plumber walked off the job. Professional, knowledgeable, and fair pricing. 
+            We'll never call anyone else."
+            <br />
+            <span class="text-white font-semibold mt-2 block">– Sarah M., Homeowner</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio & Story -->
+      <div>
+        <div data-reveal class="reveal">
+
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Master Plumber</h2>
+          <p class="text-gray-400 mb-4">
+            I'm Floyd Williams, a licensed master plumber serving Houston and surrounding areas. With over 15 years of experience, 
+            I provide honest, reliable plumbing services for homeowners and businesses who value quality workmanship.
+          </p>
+          <p class="text-gray-400 mb-4">
+            My approach is straightforward: diagnose the problem correctly, explain your options clearly, and complete the work 
+            right the first time. Whether it's a simple repair or a complex installation, I treat every job with the same attention to detail.
+          </p>
+          <p class="text-gray-400">
+            Licensed, bonded, and insured. I stand behind my work with comprehensive warranties and 24/7 emergency service 
+            because plumbing problems don't wait for business hours.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- CONTACT & BOOKING SECTION -->
+  <section id="contact" class="bg-[#121212] py-16 px-6 md:px-12">
+    <div class="max-w-4xl mx-auto text-center mb-10">
+      <div data-reveal class="reveal">
+
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get Your Free Estimate</h2>
+        <p class="text-gray-400 text-lg">Describe your plumbing needs and I'll provide an honest assessment.</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="max-w-3xl mx-auto grid gap-6">
+      <!-- Security Tip: Replace YOUR_FORMSPREE_ENDPOINT and YOUR_STRIPE_PUBLIC_KEY with your actual credentials once ready to go live. -->
+      <input type="text" name="name" placeholder="Your Name" required
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+      <input type="email" name="email" placeholder="Email Address" required
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+      <input type="tel" name="phone" placeholder="Phone Number" required
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+      <select name="service_type"
+        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition">
+        <option value="">Select Service Type</option>
+        <option value="emergency">Emergency Repair</option>
+        <option value="installation">New Installation</option>
+        <option value="remodel">Bathroom/Kitchen Remodel</option>
+        <option value="maintenance">Routine Maintenance</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="text" name="budget" placeholder="Budget Range (e.g. $200–$500)"
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+      <textarea name="message" rows="5" placeholder="Describe the plumbing issue or project details" required
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition"></textarea>
+      <input type="date" name="preferred_date"
+        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition" />
+      <button type="submit"
+        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
+        Request Estimate
+      </button>
+    </form>
+
+    <!-- Emergency Contact -->
+    <div class="text-center mt-12">
+      <p class="text-gray-400 mb-4">Plumbing emergency? Call now for immediate service:</p>
+      <button id="emergencyButton"
+        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
+        (555) 123-PIPE
+      </button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#1a1a1a] py-10 px-6 text-center text-gray-500 text-sm">
+    <!-- Social Icons -->
+    <div class="flex justify-center gap-6 mb-6">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/floyd.plumbing" target="_blank" aria-label="Facebook"
+        class="text-white hover:text-[#22c55e] transition transform hover:scale-110 duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+        </svg>
+      </a>
+
+      <!-- Google Business -->
+      <a href="https://www.google.com/maps/place/floyd+plumbing" target="_blank"
+        aria-label="Google Business" class="text-white hover:text-[#22c55e] transition transform hover:scale-110 duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p>© <span id="year"></span> Floyd Williams Plumbing — Licensed Master Plumber. All rights reserved.</p>
+  </footer>
+
+  <!-- Stripe & Formspree Script Placeholder -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="./scripts/apis.js"></script>
+
+  <!-- Video Clips Script -->
+  <script src="./scripts/clips.js"></script>
+
+  <!-- FINAL INTERACTIVITY SCRIPT -->
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>

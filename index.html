@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floyd - Plumber & Videographer</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Background animated elements -->
+        <div class="bg-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="content">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img src="images/floyd-himself.jpg" alt="Floyd" class="profile-image">
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">Floyd</h1>
+                    <p class="tagline">Fixing pipes and capturing moments</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>floyd@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>(555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Indianpolis, IN</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Links Section -->
+            <div class="business-links">
+                <a href="/business-plumbing" class="business-card plumbing" data-business="plumbing">
+                    <div class="business-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14,2 14,8 20,8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10,9 9,9 8,9"/>
+                        </svg>
+                    </div>
+                    <div class="business-content">
+                        <h2>Plumbing Services</h2>
+                        <p>Professional plumbing solutions for residential and commercial needs</p>
+                        <div class="business-arrow">→</div>
+                    </div>
+                </a>
+
+                <a href="/business-videography" class="business-card videography" data-business="videography">
+                    <div class="business-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="23 7 16 12 23 17 23 7"/>
+                            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+                        </svg>
+                    </div>
+                    <div class="business-content">
+                        <h2>Videography</h2>
+                        <p>Creative video production and cinematography services</p>
+                        <div class="business-arrow">→</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Transition overlay -->
+        <div class="transition-overlay">
+            <div class="transition-content">
+                <div class="loading-spinner"></div>
+                <p class="transition-text">Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
