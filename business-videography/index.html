@@ -29,7 +29,7 @@
   <!-- Custom Cursor Element -->
   <div id="cursor" class="custom-cursor hidden md:block"></div>
 
-  <a href="/index.html" aria-label="Go Home"
+  <a href="../index.html" aria-label="Go Home"
     class="fixed top-5 right-5 p-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-20 transition z-10000">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
       class="w-8 h-8 text-white text-opacity-100">
@@ -37,7 +37,6 @@
         d="M3 9.75L12 3l9 6.75M4.5 10.5v8.25A1.5 1.5 0 006 20.25h3.75v-6.75h4.5v6.75H18a1.5 1.5 0 001.5-1.5V10.5" />
     </svg>
   </a>
-
 
   <!-- HERO SECTION -->
   <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
@@ -60,10 +59,16 @@
       <p class="text-lg md:text-xl text-gray-300 mb-8">
         Authentic visuals for creators, artists, and local businesses.
       </p>
-      <a href="#portfolio"
-        class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
-        View Portfolio
-      </a>
+      <div>
+        <a href="#portfolio"
+          class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold me-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+          View Portfolio
+        </a>
+        <a href="#contact"
+          class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold ms-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+          Contact Me
+        </a>
+      </div>
     </div>
   </section>
 
@@ -195,14 +200,14 @@
 
       <!-- Style Visual + Social Proof -->
       <div class="flex flex-col items-center md:items-end text-center md:text-right">
-        <img src="./assets/images/floyd-himself.jpg" alt="Videographer Portrait"
+        <img src="./assets/images/dope-artist-logo.png" alt="Videographer Portrait"
           class="w-64 h-64 object-cover rounded-full border-4 border-[#f97316] mb-6 shadow-lg" />
         <div data-reveal class="reveal">
           <div class="text-sm text-gray-400 italic max-w-md">
             “Working with Floyd felt more like a creative partnership than a transaction. The results speak for
             themselves.”
             <br />
-            <span class="text-white font-semibold mt-2 block">– Random Dude, Local Artist</span>
+            <span class="text-white font-semibold mt-2 block">– Random Lady, Local Artist</span>
           </div>
         </div>
       </div>
@@ -284,7 +289,7 @@
     </div>
 
     <!-- Copyright -->
-    <p>© <span id="year"></span> Floyd — Local & Real Videography. All rights reserved.</p>
+    <p>© <span id="year">2025</span> Floyd's Business — Local & Real Videographer. All rights reserved.</p>
   </footer>
 
   <!-- Stripe & Formspree Script Placeholder -->
@@ -296,6 +301,13 @@
 
   <!-- FINAL INTERACTIVITY SCRIPT -->
   <script src="./scripts/main.js"></script>
+
+   <!-- Onload UX fade -->
+   <script>
+    window.addEventListener('DOMContentLoaded', function () {
+        document.body.classList.add('fade-in');
+    });
+</script>
 </body>
 
 </html>

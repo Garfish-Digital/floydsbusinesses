@@ -54,13 +54,16 @@ window.addEventListener('scroll', () => {
 
 // Smooth Scroll
 document.addEventListener("DOMContentLoaded", function () {
-  const anchor = document.querySelector('a[href="#portfolio"]');
+  // Select all anchor links that point to sections on the page
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
-  if (anchor) {
+  anchorLinks.forEach(anchor => {
     anchor.addEventListener("click", function (event) {
       event.preventDefault(); // Prevent default jump
 
-      const target = document.querySelector("#portfolio");
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+      
       if (target) {
         target.scrollIntoView({
           behavior: "smooth",
@@ -68,5 +71,5 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
-  }
+  });
 });

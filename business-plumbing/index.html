@@ -29,6 +29,15 @@
   <!-- Custom Cursor Element -->
   <div id="cursor" class="custom-cursor hidden md:block"></div>
 
+  <a href="../index.html" aria-label="Go Home"
+    class="fixed top-5 right-5 p-3 rounded-full bg-white bg-opacity-30 hover:bg-opacity-20 transition z-10000">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-8 h-8 text-white text-opacity-100">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3 9.75L12 3l9 6.75M4.5 10.5v8.25A1.5 1.5 0 006 20.25h3.75v-6.75h4.5v6.75H18a1.5 1.5 0 001.5-1.5V10.5" />
+    </svg>
+  </a>
+
   <!-- HERO SECTION -->
   <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
 
@@ -50,10 +59,16 @@
       <p class="text-lg md:text-xl text-gray-300 mb-8">
         Expert service for homes and businesses with transparent pricing and reliable results.
       </p>
-      <a href="#portfolio"
-        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
-        View Our Work
-      </a>
+      <div>
+        <a href="#portfolio"
+          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold me-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+          View My Work
+        </a>
+        <a href="#contact"
+          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold ms-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+          Contact Me
+        </a>
+      </div>
     </div>
   </section>
 
@@ -162,14 +177,13 @@
 
       <!-- Style Visual + Social Proof -->
       <div class="flex flex-col items-center md:items-start text-center md:text-right">
-        <img src="assets/images/floyd-himself.jpg" alt="Floyd Williams Master Plumber" id="plumber-img"
+        <img src="assets/images/ctn-maintenance-logo.png" alt="Floyd Williams Master Plumber" id="plumber-img"
           class="w-64 h-64 object-cover rounded-full border-4 border-[#22c55e] mb-6 shadow-lg" />
         <div data-reveal class="reveal">
           <div class="text-sm text-gray-400 italic max-w-md">
-            "Floyd saved our kitchen renovation when another plumber walked off the job. Professional, knowledgeable, and fair pricing. 
-            We'll never call anyone else."
+            "Floyd saved our kitchen renovation when another plumber walked off the job. Professional, knowledgeable, and fair pricing. We'll never call anyone else."
             <br />
-            <span class="text-white font-semibold mt-2 block">– Sarah M., Homeowner</span>
+            <span class="text-white font-semibold mt-2 block">– Random Dude, Homeowner</span>
           </div>
         </div>
       </div>
@@ -180,7 +194,7 @@
 
           <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Master Plumber</h2>
           <p class="text-gray-400 mb-4">
-            I'm Floyd Williams, a licensed master plumber serving Houston and surrounding areas. With over 15 years of experience, 
+            I'm Floyd, a licensed plumber serving Indianapolis and surrounding areas. With over 10 years of experience, 
             I provide honest, reliable plumbing services for homeowners and businesses who value quality workmanship.
           </p>
           <p class="text-gray-400 mb-4">
@@ -250,16 +264,16 @@
   <footer class="bg-[#1a1a1a] py-10 px-6 text-center text-gray-500 text-sm">
     <!-- Social Icons -->
     <div class="flex justify-center gap-6 mb-6">
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/floyd.plumbing" target="_blank" aria-label="Facebook"
+      <!-- Nextdoor -->
+      <a href="https://nextdoor.com/pages/ctn-maintenance-and-handy-services-noblesville-in/" target="_blank" aria-label="Nextdoor"
         class="text-white hover:text-[#22c55e] transition transform hover:scale-110 duration-300">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1.5 4.5v11h3v-11h-3zm-3 3v8h3v-8h-3zm6 0v8h3v-8h-3z"/>
         </svg>
       </a>
 
       <!-- Google Business -->
-      <a href="https://www.google.com/maps/place/floyd+plumbing" target="_blank"
+      <a href="https://www.google.com/maps/place/South+Side+Indianapolis,+IN/@39.7125,-86.1458,13z" target="_blank"
         aria-label="Google Business" class="text-white hover:text-[#22c55e] transition transform hover:scale-110 duration-300">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
           <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
@@ -271,7 +285,7 @@
     </div>
 
     <!-- Copyright -->
-    <p>© <span id="year"></span> Floyd Williams Plumbing — Licensed Master Plumber. All rights reserved.</p>
+    <p>© <span id="year">2025</span> Floyd's Business — Licensed Plumber. All rights reserved.</p>
   </footer>
 
   <!-- Stripe & Formspree Script Placeholder -->
@@ -283,6 +297,13 @@
 
   <!-- FINAL INTERACTIVITY SCRIPT -->
   <script src="./scripts/main.js"></script>
+
+   <!-- Onload UX fade -->
+   <script>
+    window.addEventListener('DOMContentLoaded', function () {
+        document.body.classList.add('fade-in');
+    });
+</script>
 </body>
 
 </html>
