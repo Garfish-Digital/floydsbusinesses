@@ -58,6 +58,7 @@ yarn-error.log*
 
 # Media and large files
 *.mp4
+!business-videography/assets/clips/*.mp4
 *.mov
 *.avi
 *.wmv
