@@ -241,3 +241,11 @@ const debouncedParallax = debounce(function(e) {
 }, 16); // ~60fps
 
 window.addEventListener('mousemove', debouncedParallax);
+
+// Emergency Button Click-to-Call
+const emergencyButton = document.getElementById('emergencyButton');
+if (emergencyButton) {
+    emergencyButton.addEventListener('click', function() {
+        window.location.href = 'tel:2173044676';
+    });
+}
