@@ -22,6 +22,21 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-reveal]').forEach(el => {
     observer.observe(el);
   });
+
+  // Image Slideshow Logic
+  const slideshow = document.getElementById('image-slideshow');
+  if (slideshow) {
+      const images = slideshow.querySelectorAll('.slideshow-image');
+      let currentImageIndex = 0;
+
+      if (images.length > 0) {
+          setInterval(() => {
+              images[currentImageIndex].classList.remove('active');
+              currentImageIndex = (currentImageIndex + 1) % images.length;
+              images[currentImageIndex].classList.add('active');
+          }, 3000);
+      }
+  }
 });
 
 // Magnetic Hover (Basic Stub)

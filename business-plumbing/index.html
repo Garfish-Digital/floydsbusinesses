@@ -88,9 +88,9 @@
 
       <!-- Portfolio Items -->
       <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video1" class="w-full h-[28rem] object-cover rounded" poster="assets/images/portfolio-1-poster.jpg"
+        <video id="video1" class="w-full h-[28rem] object-cover rounded" poster="assets/images/gas-image-poster.jpg"
           preload="metadata" playsinline>
-          <source src="assets/clips/portfolio-1-clip.mp4" type="video/mp4" />
+          <source src="assets/clips/gas-clip.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -101,31 +101,39 @@
         </div>
       </div>
 
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video2" class="w-full h-[28rem] object-cover rounded" poster="assets/images/portfolio-2-poster.jpg"
-          preload="metadata" playsinline>
-          <source src="assets/clips/portfolio-2-clip.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video2')"
-          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
-          <span class="text-white text-4xl font-bold">▶</span>
-        </div>
+      <!-- Image Slideshow Container -->
+      <div id="image-slideshow" class="relative w-full h-[28rem] overflow-hidden rounded shadow-lg">
+        <img src="assets/images/projects-toilet.jpg" alt="Plumbing Service Image" class="slideshow-image active">
+        <img src="assets/images/projects-boiler.jpg" alt="Plumbing Portfolio Image 1" class="slideshow-image">
+        <img src="assets/images/projects-sink.jpg" alt="Plumbing Portfolio Image 2" class="slideshow-image">
+        <img src="assets/images/projects-refrigerant.jpg" alt="Plumbing Portfolio Image 3" class="slideshow-image">
       </div>
 
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+      <!-- <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
         <video id="video3" class="w-full h-[28rem] object-cover rounded" poster="assets/images/portfolio-3-poster.jpg"
           preload="metadata" playsinline>
           <source src="assets/clips/portfolio-3-clip.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+        </video> -->
 
         <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video3')"
+        <!-- <div onclick="togglePlay('video3')"
           class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
           <span class="text-white text-4xl font-bold">▶</span>
+        </div>
+      </div> -->
+
+      <!-- Flipping Card Container -->
+      <div class="flip-card h-[28rem] w-full [perspective:1000px] cursor-pointer">
+        <div class="flip-card-inner relative w-full h-full text-center transition-transform duration-700 [transform-style:preserve-3d]">
+          <!-- Front Face -->
+          <div class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] overflow-hidden rounded shadow-lg">
+            <img src="assets/images/water-softener-after.png" alt="Water Softener After" class="w-full h-full object-cover">
+          </div>
+          <!-- Back Face -->
+          <div class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden rounded shadow-lg">
+            <img src="assets/images/water-softener-before.png" alt="Water Softener Before" class="w-full h-full object-cover">
+          </div>
         </div>
       </div>
 
@@ -249,7 +257,7 @@
         <!-- Security Tip: Replace YOUR_FORMSPREE_ENDPOINT and YOUR_STRIPE_PUBLIC_KEY with your actual credentials once ready to go live. -->
         <p class="hidden">
           <label>
-            Don’t fill this out if you’re human: <input name="bot-field" />
+            Don't fill this out if you're human: <input name="bot-field" />
           </label>
         </p>
         <input type="text" name="name" placeholder="Your Name" required
