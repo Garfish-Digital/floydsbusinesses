@@ -49,6 +49,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(.5);
 }
 
+.hidden {
+    display: none;
+}
+
 /* .text-glow {
     text-shadow: 0 0 2px #ff3d00, 0 0 8px #ff3d00;
 } */

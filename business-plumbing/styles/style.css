@@ -46,11 +46,15 @@ body.fade-in {
 }
 
 #plumber-img {
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(.5);
+}
+
+.hidden {
+    display: none;
 }
 
 /* .text-glow {

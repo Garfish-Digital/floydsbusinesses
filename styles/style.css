@@ -258,8 +258,8 @@ body {
 }
 
 .business-icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,6 +275,13 @@ body {
 .business-card.videography .business-icon {
     background: #f97316;
     color: #121212;
+}
+
+.business-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .business-icon svg {

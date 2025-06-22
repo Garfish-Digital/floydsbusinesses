@@ -30,8 +30,7 @@
   <div id="cursor" class="custom-cursor hidden md:block"></div>
 
   <!-- Go Home Button - Moved outside sections and enhanced -->
-  <a href="../index.html" 
-    aria-label="Go Home"
+  <a href="../index.html" aria-label="Go Home"
     class="fixed top-5 right-5 p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm transition-all duration-300 z-[999999] isolate shadow-lg hover:shadow-xl hover:scale-105">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
       class="w-8 h-8 text-white">
@@ -88,12 +87,8 @@
 
       <!-- Portfolio Items 1 -->
       <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video4" 
-          class="w-full h-[40rem] md:h-[55rem] object-cover rounded" 
-          poster="assets/images/portfolio-4-poster.png"
-          preload="auto"
-          playsinline
-          crossorigin="anonymous">
+        <video id="video4" class="w-full h-[40rem] md:h-[55rem] object-cover rounded"
+          poster="assets/images/portfolio-4-poster.png" preload="auto" playsinline crossorigin="anonymous">
           <source src="assets/clips/portfolio-4-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
           Your browser does not support the video tag.
         </video>
@@ -105,8 +100,8 @@
         </div>
       </div>
 
-       <!-- TikTok Video 1 -->
-       <!-- <div class="group relative overflow-hidden rounded shadow-lg">
+      <!-- TikTok Video 1 -->
+      <!-- <div class="group relative overflow-hidden rounded shadow-lg">
         <blockquote class="tiktok-embed" 
           cite="https://www.tiktok.com/@crentoon/video/7424609573253713198"
           data-video-id="7424609573253713198"
@@ -117,12 +112,8 @@
       </div> -->
 
       <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video5" 
-          class="w-full h-[40rem] md:h-[55rem] object-cover rounded" 
-          poster="assets/images/portfolio-5-poster.png"
-          preload="auto"
-          playsinline
-          crossorigin="anonymous">
+        <video id="video5" class="w-full h-[40rem] md:h-[55rem] object-cover rounded"
+          poster="assets/images/portfolio-5-poster.png" preload="auto" playsinline crossorigin="anonymous">
           <source src="assets/clips/portfolio-5-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
           Your browser does not support the video tag.
         </video>
@@ -135,12 +126,8 @@
       </div>
 
       <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video6" 
-          class="w-full h-[40rem] md:h-[55rem] object-cover rounded" 
-          poster="assets/images/portfolio-6-poster.png"
-          preload="auto"
-          playsinline
-          crossorigin="anonymous">
+        <video id="video6" class="w-full h-[40rem] md:h-[55rem] object-cover rounded"
+          poster="assets/images/portfolio-6-poster.png" preload="auto" playsinline crossorigin="anonymous">
           <source src="assets/clips/portfolio-6-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
           Your browser does not support the video tag.
         </video>
@@ -268,7 +255,7 @@
 
       <!-- Style Visual + Social Proof -->
       <div class="flex flex-col items-center md:items-end text-center md:text-right">
-        <img src="./assets/images/crentoon-logo.PNG" alt="Videographer Portrait"
+        <img src="../images/crentoon-logo.PNG" alt="Videographer Portrait"
           class="w-64 h-64 object-cover rounded-md border-4 border-[#f97316] mb-6 shadow-lg" />
         <div data-reveal class="reveal">
           <div class="text-sm text-gray-400 italic max-w-md">
@@ -292,8 +279,19 @@
     </div>
 
     <!-- Contact Form -->
-    <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST" class="max-w-3xl mx-auto grid gap-6">
+    <form
+      name="crentoon-videography"
+      method="POST"
+      class="max-w-3xl mx-auto grid gap-6"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+    >
       <!-- Security Tip: Replace YOUR_FORMSPREE_ENDPOINT and YOUR_STRIPE_PUBLIC_KEY with your actual credentials once ready to go live. -->
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+      </p>
       <input type="text" name="name" placeholder="Your Name" required
         class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
       <input type="email" name="email" placeholder="Email Address" required
@@ -350,7 +348,8 @@
       <a href="https://www.tiktok.com/@crentoon?lang=en" target="_blank" aria-label="TikTok"
         class="text-white hover:text-[#f97316] transition transform hover:scale-110 duration-300">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+          <path
+            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
         </svg>
       </a>
 
@@ -378,12 +377,12 @@
   <!-- FINAL INTERACTIVITY SCRIPT -->
   <script src="./scripts/main.js"></script>
 
-   <!-- Onload UX fade -->
-   <script>
+  <!-- Onload UX fade -->
+  <script>
     window.addEventListener('DOMContentLoaded', function () {
-        document.body.classList.add('fade-in');
+      document.body.classList.add('fade-in');
     });
-</script>
+  </script>
 </body>
 
 </html>
