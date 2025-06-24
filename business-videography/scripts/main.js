@@ -69,7 +69,7 @@ window.addEventListener('scroll', () => {
 
 
 // Smooth Scroll
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
   // Select all anchor links that point to sections on the page
   const anchorLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -88,4 +88,4 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
-});
+// });

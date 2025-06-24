@@ -11,7 +11,7 @@ document.addEventListener('mousemove', (e) => {
 // Intersection Observer Scroll Reveal
 document.addEventListener('DOMContentLoaded', () => {
   // Add fade-in effect on page load
-  document.body.classList.add('fade-in');
+  // document.body.classList.add('fade-in');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
