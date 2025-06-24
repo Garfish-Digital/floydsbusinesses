@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:image" content="preview.jpg" />
   <meta name="theme-color" content="#1a1a1a" />
-  <title>Floyd's Plumbing Services</title>
+  <title>The House Surgeon</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -90,7 +90,7 @@
       <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
         <video id="video1" class="w-full h-[28rem] object-cover rounded" poster="assets/images/gas-image-poster.jpg"
           preload="metadata" playsinline>
-          <source src="assets/clips/gas-clip.mp4" type="video/mp4" />
+          <source src="assets/clips/gas-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
           Your browser does not support the video tag.
         </video>
 
@@ -111,14 +111,19 @@
 
       <!-- Flipping Card Container -->
       <div class="flip-card h-[28rem] w-full [perspective:1000px] cursor-pointer">
-        <div class="flip-card-inner relative w-full h-full text-center transition-transform duration-700 [transform-style:preserve-3d]">
+        <div
+          class="flip-card-inner relative w-full h-full text-center transition-transform duration-700 [transform-style:preserve-3d]">
           <!-- Front Face -->
-          <div class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] overflow-hidden rounded shadow-lg">
-            <img src="assets/images/water-softener-after.png" alt="Water Softener After" class="w-full h-full object-cover">
+          <div
+            class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] overflow-hidden rounded shadow-lg">
+            <img src="assets/images/water-softener-after.png" alt="Water Softener After"
+              class="w-full h-full object-cover">
           </div>
           <!-- Back Face -->
-          <div class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden rounded shadow-lg">
-            <img src="assets/images/water-softener-before.png" alt="Water Softener Before" class="w-full h-full object-cover">
+          <div
+            class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden rounded shadow-lg">
+            <img src="assets/images/water-softener-before.png" alt="Water Softener Before"
+              class="w-full h-full object-cover">
           </div>
         </div>
       </div>
@@ -184,7 +189,7 @@
             "Floyd saved our kitchen renovation when another plumber walked off the job. Professional, knowledgeable,
             and fair pricing. We'll never call anyone else."
             <br />
-            <span class="text-white font-semibold mt-2 block">– Random Dude, Homeowner</span>
+            <span class="text-white font-semibold mt-2 block">– Daryl Starks, Homeowner</span>
           </div>
         </div>
       </div>
@@ -193,22 +198,35 @@
       <div>
         <div data-reveal class="reveal">
 
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Plumbing & more</h2>
+          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Meet Floyd</h2>
           <p class="text-gray-400 mb-4">
+            I'm Floyd, a licensed plumbing contractor proudly serving Indianpolis and the surrounding areas. With over
+            seven years in the plumbing field, I specialize in plumbing, gas, and water quality, delivering reliable
+            service for homeowners and businesses who value real craftsmanship.
+          </p>
+          <!-- <p class="text-gray-400 mb-4">
             I'm Floyd, a licensed plumber serving Indianapolis and surrounding areas. With over 10 years of experience,
             I provide honest, reliable plumbing services for homeowners and businesses who value quality workmanship.
+          </p> -->
+          <p class="text-gray-400 mb-4">
+            My approach is straightforward: diagnose the problem correctly, explain your options clearly, and get it
+            done properly the first time. I'm fully licensed, bonded, and insured, and I stand behind every job with
+            real accountability.
           </p>
           <p class="text-gray-400 mb-4">
+            Need urgent help? I offer emergency service for serious situations - with emergency visits starting at $200. Skilled hands, solid work. That's how we do it.
+          </p>
+          <!-- <p class="text-gray-400 mb-4">
             My approach is straightforward: diagnose the problem correctly, explain your options clearly, and complete
             the work
             right the first time. Whether it's a simple repair or a complex installation, I treat every job with the
             same attention to detail.
-          </p>
-          <p class="text-gray-400">
+          </p> -->
+          <!-- <p class="text-gray-400">
             Licensed, bonded, and insured. I stand behind my work with comprehensive warranties and 24/7 emergency
             service
             because plumbing problems don't wait for business hours.
-          </p>
+          </p> -->
         </div>
       </div>
 
@@ -224,56 +242,51 @@
       </div>
     </div>
 
-      <!-- Contact Form -->
-      <form
-        name="house-surgeon-plumbing"
-        method="POST"
-        class="max-w-3xl mx-auto grid gap-6"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-      >
-        <!-- Security Tip: Replace YOUR_FORMSPREE_ENDPOINT and YOUR_STRIPE_PUBLIC_KEY with your actual credentials once ready to go live. -->
-        <p class="hidden">
-          <label>
-            Don't fill this out if you're human: <input name="bot-field" />
-          </label>
-        </p>
-        <input type="text" name="name" placeholder="Your Name" required
-          class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
-        <input type="email" name="email" placeholder="Email Address" required
-          class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
-        <input type="tel" name="phone" placeholder="Phone Number" required
-          class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
-        <select name="service_type"
-          class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition">
-          <option value="">Select Service Type</option>
-          <option value="gas">Gas Maintenenace</option>
-          <option value="emergency">Emergency Repair</option>
-          <option value="installation">New Water Softener Installation</option>
-          <option value="installation">New Water Heater Installation</option>
-          <option value="remodel">Bathroom/Kitchen Remodel</option>
-          <option value="other">Other</option>
-        </select>
-        <!-- <input type="text" name="budget" placeholder="Budget Range (e.g. $200–$500)"
+    <!-- Contact Form -->
+    <form name="house-surgeon-plumbing" method="POST" class="max-w-3xl mx-auto grid gap-6" data-netlify="true"
+      netlify-honeypot="bot-field">
+      <!-- Security Tip: Replace YOUR_FORMSPREE_ENDPOINT and YOUR_STRIPE_PUBLIC_KEY with your actual credentials once ready to go live. -->
+      <p class="hidden">
+        <label>
+          Don't fill this out if you're human: <input name="bot-field" />
+        </label>
+      </p>
+      <input type="text" name="name" placeholder="Your Name" required
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+      <input type="email" name="email" placeholder="Email Address" required
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+      <input type="tel" name="phone" placeholder="Phone Number" required
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+      <select name="service_type"
+        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition">
+        <option value="">Select Service Type</option>
+        <option value="gas">Gas Maintenenace</option>
+        <option value="emergency">Emergency Repair</option>
+        <option value="installation">New Water Softener Installation</option>
+        <option value="installation">New Water Heater Installation</option>
+        <option value="remodel">Bathroom/Kitchen Remodel</option>
+        <option value="other">Other</option>
+      </select>
+      <!-- <input type="text" name="budget" placeholder="Budget Range (e.g. $200–$500)"
           class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" /> -->
-        <textarea name="message" rows="5" placeholder="Describe the plumbing issue or project details" required
-          class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition"></textarea>
-        <input type="date" name="preferred_date"
-          class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition" />
-        <button type="submit"
-          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
-          Request Estimate
-        </button>
-      </form>
+      <textarea name="message" rows="5" placeholder="Describe the plumbing issue or project details" required
+        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition"></textarea>
+      <input type="date" name="preferred_date"
+        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition" />
+      <button type="submit"
+        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
+        Request Estimate
+      </button>
+    </form>
 
-      <!-- Emergency Contact -->
-      <div class="text-center mt-12">
-        <p class="text-gray-400 mb-4">Plumbing emergency? Call now for immediate service:</p>
-        <button id="emergencyButton"
-          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
-          (217) 304-4676
-        </button>
-      </div>
+    <!-- Emergency Contact -->
+    <div class="text-center mt-12">
+      <p class="text-gray-400 mb-4">Plumbing emergency? Call now for immediate service:</p>
+      <button id="emergencyButton"
+        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
+        (217) 304-4676
+      </button>
+    </div>
   </section>
 
   <!-- FOOTER -->

@@ -10,6 +10,9 @@ document.addEventListener('mousemove', (e) => {
 
 // Intersection Observer Scroll Reveal
 document.addEventListener('DOMContentLoaded', () => {
+  // Add fade-in effect on page load
+  document.body.classList.add('fade-in');
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -47,6 +50,24 @@ document.addEventListener('DOMContentLoaded', () => {
           });
       });
   }
+
+  // Smooth Scroll Logic
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+  anchorLinks.forEach(anchor => {
+    anchor.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent default jump
+
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+      
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
 });
 
 // Magnetic Hover (Basic Stub)
@@ -75,26 +96,4 @@ window.addEventListener('scroll', () => {
     scrollTimeout = setTimeout(() => {
         // Custom scroll events can go here
     }, 100);
-});
-
-// Smooth Scroll
-document.addEventListener("DOMContentLoaded", function () {
-  // Select all anchor links that point to sections on the page
-  const anchorLinks = document.querySelectorAll('a[href^="#"]');
-
-  anchorLinks.forEach(anchor => {
-    anchor.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default jump
-
-      const targetId = this.getAttribute('href');
-      const target = document.querySelector(targetId);
-      
-      if (target) {
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
-    });
-  });
 });
