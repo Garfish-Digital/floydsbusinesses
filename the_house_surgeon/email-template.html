@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Contact Form Submission</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #1f7a3b, #2aa42a);
+            color: white;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        .content {
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 0 0 8px 8px;
+        }
+        .field {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-left: 4px solid #2aa42a;
+            border-radius: 4px;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #1f7a3b;
+            margin-bottom: 5px;
+        }
+        .field-value {
+            color: #333;
+        }
+        .footer {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #666;
+            text-align: center;
+        }
+        .urgent {
+            background: #fff3cd;
+            border-left-color: #f0ad4e;
+            border: 1px solid #f0ad4e;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏠 New Contact - The House Surgeon</h1>
+        <p>Someone needs your plumbing expertise!</p>
+    </div>
+    
+    <div class="content">
+        <div class="field">
+            <div class="field-label">Customer Name:</div>
+            <div class="field-value">{{ name }}</div>
+        </div>
+        
+        <div class="field">
+            <div class="field-label">Email Address:</div>
+            <div class="field-value">{{ email }}</div>
+        </div>
+        
+        <div class="field">
+            <div class="field-label">Phone Number:</div>
+            <div class="field-value">{{ phone }}</div>
+        </div>
+        
+        <div class="field {{ if eq .service_type "emergency" }}urgent{{ end }}">
+            <div class="field-label">Service Type:</div>
+            <div class="field-value">
+                {{ if eq .service_type "gas" }}Gas Maintenance{{ end }}
+                {{ if eq .service_type "emergency" }}🚨 EMERGENCY REPAIR{{ end }}
+                {{ if eq .service_type "water-softener" }}New Water Softener Installation{{ end }}
+                {{ if eq .service_type "water-heater" }}New Water Heater Installation{{ end }}
+                {{ if eq .service_type "remodel" }}Bathroom/Kitchen Remodel{{ end }}
+                {{ if eq .service_type "other" }}Other Service{{ end }}
+                {{ if not .service_type }}Not specified{{ end }}
+            </div>
+        </div>
+        
+        {{ if .preferred_date }}
+        <div class="field">
+            <div class="field-label">Preferred Date:</div>
+            <div class="field-value">{{ preferred_date }}</div>
+        </div>
+        {{ end }}
+        
+        <div class="field">
+            <div class="field-label">Message Details:</div>
+            <div class="field-value">{{ message }}</div>
+        </div>
+        
+        <div class="field" style="background: #e8f5e8; border-left-color: #28a745;">
+            <div class="field-label">📞 Quick Actions:</div>
+            <div class="field-value">
+                <strong>Call:</strong> <a href="tel:{{ phone }}">{{ phone }}</a><br>
+                <strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>Form submitted on {{ .form_name }} via The House Surgeon website</p>
+        <p>Received: {{ .created_at }}</p>
+    </div>
+</body>
+</html>
