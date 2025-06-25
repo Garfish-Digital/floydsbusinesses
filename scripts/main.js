@@ -249,3 +249,13 @@ if (emergencyButton) {
         window.location.href = 'tel:2173044676';
     });
 }
+
+// Handle browser back/forward cache to reset transitions
+window.addEventListener('pageshow', function (event) {
+    if (event.persisted) {
+        const overlay = document.querySelector('.transition-overlay');
+        if (overlay && overlay.classList.contains('active')) {
+            overlay.classList.remove('active');
+        }
+    }
+});

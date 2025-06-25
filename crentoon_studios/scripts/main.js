@@ -39,13 +39,33 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Smooth Scroll
+  // Select all anchor links that point to sections on the page
+  const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+  anchorLinks.forEach(anchor => {
+    anchor.addEventListener("click", function (event) {
+      event.preventDefault(); // Prevent default jump
+
+      const targetId = this.getAttribute('href');
+      const target = document.querySelector(targetId);
+      
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+
 // Magnetic Hover (Basic Stub)
 function magnetize(el) {
   el.style.transition = 'transform 0.3s ease-out'; // Add glide effect
 
   el.addEventListener('mousemove', (e) => {
     const rect = el.getBoundingClientRect();
-    const x = (e.clientX - rect.left - rect.width / 2) * 0.1; // reduce pull strength
+    const x = (e.clientX - rect.left - rect.width / 2) * 0.1; // pull strength
     const y = (e.clientY - rect.top - rect.height / 2) * 0.1;
 
     el.style.transform = `translate(${x}px, ${y}px)`;
@@ -66,26 +86,3 @@ window.addEventListener('scroll', () => {
         // Custom scroll events can go here
     }, 100);
 });
-
-
-// Smooth Scroll
-// document.addEventListener("DOMContentLoaded", function () {
-  // Select all anchor links that point to sections on the page
-  const anchorLinks = document.querySelectorAll('a[href^="#"]');
-
-  anchorLinks.forEach(anchor => {
-    anchor.addEventListener("click", function (event) {
-      event.preventDefault(); // Prevent default jump
-
-      const targetId = this.getAttribute('href');
-      const target = document.querySelector(targetId);
-      
-      if (target) {
-        target.scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
-    });
-  });
-// });

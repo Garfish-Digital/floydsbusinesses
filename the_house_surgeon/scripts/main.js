@@ -4,13 +4,12 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Custom Cursor
 const cursor = document.getElementById('cursor');
 document.addEventListener('mousemove', (e) => {
-    cursor.style.left = `${e.clientX}px`;
-    cursor.style.top = `${e.clientY}px`;
+  cursor.style.left = `${e.clientX}px`;
+  cursor.style.top = `${e.clientY}px`;
 });
 
 // Intersection Observer Scroll Reveal
 document.addEventListener('DOMContentLoaded', () => {
-  // Add fade-in effect on page load
   // document.body.classList.add('fade-in');
 
   const observer = new IntersectionObserver((entries) => {
@@ -29,26 +28,26 @@ document.addEventListener('DOMContentLoaded', () => {
   // Image Slideshow Logic
   const slideshow = document.getElementById('image-slideshow');
   if (slideshow) {
-      const images = slideshow.querySelectorAll('.slideshow-image');
-      let currentImageIndex = 0;
+    const images = slideshow.querySelectorAll('.slideshow-image');
+    let currentImageIndex = 0;
 
-      if (images.length > 0) {
-          setInterval(() => {
-              images[currentImageIndex].classList.remove('active');
-              currentImageIndex = (currentImageIndex + 1) % images.length;
-              images[currentImageIndex].classList.add('active');
-          }, 3000);
-      }
+    if (images.length > 0) {
+      setInterval(() => {
+        images[currentImageIndex].classList.remove('active');
+        currentImageIndex = (currentImageIndex + 1) % images.length;
+        images[currentImageIndex].classList.add('active');
+      }, 3000);
+    }
   }
 
   // Flipping Card Logic
   const flipCards = document.querySelectorAll('.flip-card');
   if (flipCards) {
-      flipCards.forEach(card => {
-          card.addEventListener('click', function() {
-              this.classList.toggle('is-flipped');
-          });
+    flipCards.forEach(card => {
+      card.addEventListener('click', function () {
+        this.classList.toggle('is-flipped');
       });
+    });
   }
 
   // Smooth Scroll Logic
@@ -59,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const targetId = this.getAttribute('href');
       const target = document.querySelector(targetId);
-      
+
       if (target) {
         target.scrollIntoView({
           behavior: "smooth",
@@ -92,8 +91,8 @@ document.querySelectorAll('.group').forEach(magnetize);
 // Debounced Scroll (Optional Enhancement)
 let scrollTimeout;
 window.addEventListener('scroll', () => {
-    if (scrollTimeout) clearTimeout(scrollTimeout);
-    scrollTimeout = setTimeout(() => {
-        // Custom scroll events can go here
-    }, 100);
+  if (scrollTimeout) clearTimeout(scrollTimeout);
+  scrollTimeout = setTimeout(() => {
+    // Custom scroll events can go here
+  }, 100);
 });
