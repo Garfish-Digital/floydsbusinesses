@@ -120,7 +120,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /* Flipping Card */
-.flip-card:hover .flip-card-inner,
-.flip-card.is-flipped .flip-card-inner {
-  transform: rotateY(180deg);
+.flip-card-inner.is-flipped {
+    transform: rotateY(180deg);
 }

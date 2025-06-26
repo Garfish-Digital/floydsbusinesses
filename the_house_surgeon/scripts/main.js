@@ -10,8 +10,6 @@ document.addEventListener('mousemove', (e) => {
 
 // Intersection Observer Scroll Reveal
 document.addEventListener('DOMContentLoaded', () => {
-  // document.body.classList.add('fade-in');
-
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -45,7 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (flipCards) {
     flipCards.forEach(card => {
       card.addEventListener('click', function () {
-        this.classList.toggle('is-flipped');
+        const flipCardInner = this.querySelector('.flip-card-inner');
+        if (flipCardInner) {
+          flipCardInner.classList.toggle('is-flipped');
+        }
       });
     });
   }
