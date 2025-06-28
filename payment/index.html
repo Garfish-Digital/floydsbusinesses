@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Secure payment portal for Floyd's services - plumbing and videography." />
+  <meta name="author" content="Floyd" />
+  <meta property="og:title" content="Payment Portal | Floyd's Services" />
+  <meta property="og:description" content="Secure payment processing for plumbing and videography services." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#1a1a1a" />
+  <link rel="icon" type="image/jpeg" sizes="32x32" href="../images/floyd-favicon.jpg">
+
+  <title>Payment Portal | Floyd's Services</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stripe JS -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!-- Payment Styles -->
+  <link rel="stylesheet" href="./styles/payment.css">
+</head>
+
+<body class="antialiased bg-[#1a1a1a] text-white min-h-screen">
+  <!-- Go Home Button -->
+  <a href="../index.html" aria-label="Go Home"
+    class="fixed top-5 left-5 p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm transition-all duration-300 z-[999999] isolate shadow-lg hover:shadow-xl hover:scale-105">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-8 h-8 text-white">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3 9.75L12 3l9 6.75M4.5 10.5v8.25A1.5 1.5 0 006 20.25h3.75v-6.75h4.5v6.75H18a1.5 1.5 0 001.5-1.5V10.5" />
+    </svg>
+  </a>
+
+  <!-- Back Button -->
+  <button id="backButton" aria-label="Go Back"
+    class="fixed top-5 right-5 p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm transition-all duration-300 z-[999999] isolate shadow-lg hover:shadow-xl hover:scale-105">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+      class="w-8 h-8 text-white">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+    </svg>
+  </button>
+
+  <div class="container mx-auto px-6 py-20 max-w-4xl">
+    <!-- Header Section -->
+    <div class="text-center mb-12">
+      <div class="business-logo mb-6">
+        <img id="businessLogo" src="../images/floyd-favicon.jpg" alt="Business Logo" 
+             class="w-24 h-24 mx-auto rounded-full border-4 border-[#22c55e] shadow-lg">
+      </div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        <span id="businessTitle">Payment Portal</span>
+      </h1>
+      <p class="text-gray-400 text-lg" id="businessDescription">
+        Secure payment processing for professional services
+      </p>
+    </div>
+
+    <!-- Payment Form Section -->
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+      <!-- Service Selection -->
+      <div class="bg-[#1e1e1e] p-8 rounded-lg border border-gray-700">
+        <h2 class="text-2xl font-semibold mb-6">Select Service</h2>
+        
+        <!-- Service Options (populated by JS) -->
+        <div id="serviceOptions" class="space-y-4">
+          <!-- Services will be populated based on business -->
+        </div>
+
+        <!-- Custom Amount -->
+        <div class="mt-8">
+          <label for="customAmount" class="block text-sm font-medium text-gray-300 mb-2">
+            Adjust Amount (Optional)
+          </label>
+          <div class="relative">
+            <span class="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400">$</span>
+            <input type="number" id="customAmount" placeholder="0.00" step="1" min="0"
+              class="w-full pl-8 p-3 rounded bg-[#121212] text-white border border-gray-600 focus:border-[#22c55e] outline-none transition">
+          </div>
+          <p class="text-xs text-gray-500 mt-1">Enter a whole dollar amount to override the default price</p>
+        </div>
+
+        <!-- Description/Notes -->
+        <div class="mt-6">
+          <label for="paymentDescription" class="block text-sm font-medium text-gray-300 mb-2">
+            Payment Description
+          </label>
+          <textarea id="paymentDescription" rows="3" placeholder="Brief description of the service or payment purpose"
+            class="w-full p-3 rounded bg-[#121212] text-white border border-gray-600 focus:border-[#22c55e] outline-none transition"></textarea>
+        </div>
+      </div>
+
+      <!-- Payment Summary & Checkout -->
+      <div class="bg-[#1e1e1e] p-8 rounded-lg border border-gray-700">
+        <h2 class="text-2xl font-semibold mb-6">Payment Summary</h2>
+        
+        <div class="space-y-4 mb-8">
+          <div class="flex justify-between">
+            <span class="text-gray-400">Service:</span>
+            <span id="selectedService">None selected</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-gray-400">Amount:</span>
+            <span id="totalAmount" class="text-2xl font-bold text-[#22c55e]">$0.00</span>
+          </div>
+          <div class="border-t border-gray-600 pt-4">
+            <div class="flex justify-between text-lg font-semibold">
+              <span>Total:</span>
+              <span id="finalTotal" class="text-[#22c55e]">$0.00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold mb-4">Contact Information</h3>
+          <div class="space-y-4">
+            <input type="text" id="customerName" placeholder="Full Name" required
+              class="w-full p-3 rounded bg-[#121212] text-white border border-gray-600 focus:border-[#22c55e] outline-none transition">
+            <input type="email" id="customerEmail" placeholder="Email Address" required
+              class="w-full p-3 rounded bg-[#121212] text-white border border-gray-600 focus:border-[#22c55e] outline-none transition">
+            <input type="tel" id="customerPhone" placeholder="Phone Number"
+              class="w-full p-3 rounded bg-[#121212] text-white border border-gray-600 focus:border-[#22c55e] outline-none transition">
+          </div>
+        </div>
+
+        <!-- Checkout Button -->
+        <button id="checkoutButton" disabled
+          class="w-full bg-gradient-to-r from-[#1f7a3b] via-[#22c55e] to-[#1f7a3b] text-white font-semibold py-4 px-6 rounded-lg transition duration-300 shadow-lg transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none">
+          <span id="buttonText">Select a service to continue</span>
+          <div id="loadingSpinner" class="hidden inline-block w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin ml-2"></div>
+        </button>
+
+        <!-- Security Notice -->
+        <div class="mt-6 text-center">
+          <div class="flex items-center justify-center text-sm text-gray-400">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
+            </svg>
+            Secured by Stripe
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="text-center mt-16 text-gray-500 text-sm">
+      <p>Questions about your payment? Contact Floyd at 
+        <a href="mailto:crentoonnetworthllc@gmail.com" class="text-[#22c55e] hover:underline">
+          crentoonnetworthllc@gmail.com
+        </a> or 
+        <a href="tel:2179181273" class="text-[#22c55e] hover:underline">
+          (217) 918-1273
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="./scripts/stripe.js"></script>
+</body>
+
+</html>

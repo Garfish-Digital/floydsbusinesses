@@ -1,0 +1,140 @@
+/* Payment Page Styles */
+.business-logo img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.business-logo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(34, 197, 94, 0.3);
+}
+
+/* Service Selection Styles */
+.service-option {
+  background: #121212;
+  border: 2px solid #374151;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.service-option:hover {
+  border-color: #22c55e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(34, 197, 94, 0.2);
+}
+
+.service-option.selected {
+  border-color: #22c55e;
+  background: rgba(34, 197, 94, 0.1);
+  box-shadow: 0 0 20px rgba(34, 197, 94, 0.3);
+}
+
+.service-option.selected::after {
+  content: '✓';
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: #22c55e;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.service-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.25rem;
+}
+
+.service-price {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #22c55e;
+  margin-bottom: 0.5rem;
+}
+
+.service-description {
+  font-size: 0.875rem;
+  color: #9ca3af;
+  line-height: 1.4;
+}
+
+/* Business-specific theming */
+.business-crentoon .service-option:hover,
+.business-crentoon .service-option.selected {
+  border-color: #f97316;
+}
+
+.business-crentoon .service-option.selected {
+  background: rgba(249, 115, 22, 0.1);
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.3);
+}
+
+.business-crentoon .service-option.selected::after {
+  background: #f97316;
+}
+
+.business-crentoon .service-price {
+  color: #f97316;
+}
+
+.business-crentoon input:focus,
+.business-crentoon textarea:focus {
+  border-color: #f97316;
+}
+
+.business-crentoon #totalAmount,
+.business-crentoon #finalTotal {
+  color: #f97316;
+}
+
+.business-crentoon #checkoutButton {
+  background: linear-gradient(to right, #7a1f1f, #f97316, #7a1f1f);
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Animation for form reveal */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.5s ease-out;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .service-option {
+    padding: 0.75rem;
+  }
+  
+  .service-title {
+    font-size: 1rem;
+  }
+}
