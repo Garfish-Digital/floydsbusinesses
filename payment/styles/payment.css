@@ -105,6 +105,8 @@
 .loading {
   opacity: 0.7;
   pointer-events: none;
+  color: #FFD700;
+  color: #b8860b;
 }
 
 /* Animation for form reveal */

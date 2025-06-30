@@ -2,343 +2,456 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Professional plumbing services for residential and commercial properties in Indianapolis." />
-  <meta name="author" content="Floyd Plumbing" />
-  <meta property="og:title" content="The House Surgeon | Indianapolis Plumbing Services" />
-  <meta property="og:description" content="Expert plumbing solutions with honest pricing and reliable service." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="preview.jpg" />
-  <meta name="theme-color" content="#1a1a1a" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/house-surgeon-favicon.PNG">
-  <title>The House Surgeon | Indianapolis Plumbing Services</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Professional plumbing services for residential and commercial properties in Indianapolis." />
+    <meta name="author" content="Floyd Plumbing" />
+    <meta property="og:title" content="The House Surgeon | Indianapolis Plumbing Services" />
+    <meta property="og:description" content="Expert plumbing solutions with honest pricing and reliable service." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="preview.jpg" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/house-surgeon-favicon.PNG">
+    <title>The House Surgeon | Indianapolis Plumbing Services</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Global Styles -->
-  <link rel="stylesheet" href="./styles/style.css">
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="antialiased">
-  <!-- Custom Cursor Element -->
-  <div id="cursor" class="custom-cursor hidden md:block"></div>
+    <!-- Custom Cursor Element -->
+    <div id="cursor" class="custom-cursor hidden md:block"></div>
 
-  <!-- Go Home Button - Moved outside sections and enhanced -->
-  <a href="../index.html" aria-label="Go Home"
-    class="fixed top-5 right-5 p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm transition-all duration-300 z-[999999] isolate shadow-lg hover:shadow-xl hover:scale-105">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-      class="w-8 h-8 text-white">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M3 9.75L12 3l9 6.75M4.5 10.5v8.25A1.5 1.5 0 006 20.25h3.75v-6.75h4.5v6.75H18a1.5 1.5 0 001.5-1.5V10.5" />
-    </svg>
-  </a>
-
-  <!-- HERO SECTION -->
-  <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
-
-    <!-- Background Video - Professional plumbing work -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
-      <video autoplay muted loop playsinline class="hero-video" poster="assets/images/hero-faucet-poster.png">
-        <source src="assets/clips/hero-faucet-clip.mp4" type="video/mp4" />
-      </video>
-    </div>
-
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-
-    <!-- Hero Content -->
-    <div class="relative z-10 px-6 md:px-12 max-w-3xl">
-      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white drop-shadow-lg">
-        The House Surgeon
-      </h1>
-      <p class="text-lg md:text-xl text-gray-300 mb-8">
-        We can't be us, without YOU. Saving the world one home at a time.
-      </p>
-      <div>
-        <a href="#portfolio"
-          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold me-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
-          View My Work
-        </a>
-        <a href="#contact"
-          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold ms-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
-          Contact Me
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO SECTION -->
-  <section id="portfolio" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
-
-    <div class="max-w-6xl mx-auto text-center mb-12">
-      <div data-reveal class="reveal">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Recent Projects</h2>
-        <p class="text-gray-400 text-lg">Quality workmanship across residential and commercial properties.</p>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Portfolio Items -->
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video1" class="w-full h-[28rem] object-cover rounded" poster="assets/images/gas-image-poster.jpg"
-          preload="metadata" playsinline>
-          <source src="assets/clips/gas-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
-          Your browser does not support the video tag.
-        </video>
-
-        <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video1')"
-          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
-          <span class="text-white text-4xl font-bold">▶</span>
-        </div>
-      </div>
-
-      <!-- Image Slideshow Container -->
-      <div id="image-slideshow" class="relative w-full h-[28rem] overflow-hidden rounded shadow-lg">
-        <img src="assets/images/projects-toilet.jpg" alt="Newly installed modern toilet" class="slideshow-image active">
-        <img src="assets/images/projects-boiler.jpg" alt="Commercial boiler system maintenance" class="slideshow-image">
-        <img src="assets/images/projects-sink.jpg" alt="Kitchen sink and faucet installation" class="slideshow-image">
-        <img src="assets/images/projects-refrigerant.jpg" alt="Refrigerant line repair and service"
-          class="slideshow-image">
-      </div>
-
-      <!-- Flipping Card Container -->
-      <div class="flip-card h-[28rem] w-full [perspective:1000px] cursor-pointer">
-        <div
-          class="flip-card-inner relative w-full h-full text-center transition-transform duration-700 [transform-style:preserve-3d]">
-          <!-- Front Face -->
-          <div
-            class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] overflow-hidden rounded shadow-lg">
-            <img src="assets/images/water-softener-after.png" alt="New water softener system after installation"
-              class="w-full h-full object-cover">
-          </div>
-          <!-- Back Face -->
-          <div
-            class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden rounded shadow-lg">
-            <img src="assets/images/water-softener-before.png" alt="Old water softener system before replacement"
-              class="w-full h-full object-cover">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES & PRICING SECTION -->
-  <section id="services" class="bg-[#121212] py-16 px-6 md:px-12">
-    <div class="max-w-5xl mx-auto text-center mb-12">
-      <div data-reveal class="reveal">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Services & Pricing</h2>
-        <p class="text-gray-400 text-lg">Professional plumbing services for every need. Upfront pricing with no hidden
-          fees.</p>
-      </div>
-    </div>
-
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-      <!-- Service Card -->
-      <div
-        class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
-        <h3 class="text-xl font-semibold text-white mb-2">Service Fee</h3>
-        <p class="text-gray-400 mb-4">No hidden charges. Our fee goes toward the cost of any work we do.</p>
-        <p class="text-white text-lg mb-4">Only <span class="font-bold">$87</span></p>
-        <a href="#contact"
-          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Call
-          Now</a>
-      </div>
-
-      <div
-        class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
-        <h3 class="text-xl font-semibold text-white mb-2">Emergency Repairs</h3>
-        <p class="text-gray-400 mb-4">24/7 emergency service, leak repairs, pipe bursts, drain clearing.</p>
-        <p class="text-white text-lg mb-4">We specialize in gas!</p>
-        <a href="#contact"
-          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Get
-          Quote</a>
-      </div>
-
-      <div
-        class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
-        <h3 class="text-xl font-semibold text-white mb-2">Water Softeners</h3>
-        <p class="text-gray-400 mb-4">Full water softener service and installation.</p>
-        <p class="text-white text-lg mb-4">Starting at <span class="font-bold">$1800</span></p>
-        <a href="#contact"
-          class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Schedule
-          Service</a>
-      </div>
-    </div>
-  </section>
-  <!-- ABOUT SECTION -->
-  <section id="about" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
-    <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-center">
-
-      <!-- Style Visual + Social Proof -->
-      <div class="flex flex-col items-center md:items-start text-center md:text-right">
-        <img src="../images/house-surgeon-logo.PNG" alt="The House Surgeon Logo" id="plumber-img"
-          class="w-64 h-64 object-cover rounded-md border-4 border-[#22c55e] mb-6 shadow-lg" />
-        <div data-reveal class="reveal">
-          <div class="text-sm text-gray-400 italic max-w-md">
-            "Floyd saved our kitchen renovation when another plumber walked off the job. Professional, knowledgeable,
-            and fair pricing. We'll never call anyone else."
-            <br />
-            <span class="text-white font-semibold mt-2 block">– Daryl Starks, Homeowner</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bio & Story -->
-      <div>
-        <div data-reveal class="reveal">
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Meet Floyd</h2>
-          <p class="text-gray-400 mb-4">
-            I'm Floyd, a licensed plumbing contractor proudly serving Indianpolis and the surrounding areas. With over
-            seven years in the plumbing field, I specialize in plumbing, gas, and water quality, delivering reliable
-            service for homeowners and businesses who value real craftsmanship.
-          </p>
-          <p class="text-gray-400 mb-4">
-            My approach is straightforward: diagnose the problem correctly, explain your options clearly, and get it
-            done properly the first time. I'm fully licensed, bonded, and insured, and I stand behind every job with
-            real accountability.
-          </p>
-          <p class="text-gray-400 mb-4">
-            Need urgent help? I offer emergency service for serious situations - with emergency visits starting at $200.
-            Skilled hands, solid work. That's how we do it.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT & BOOKING SECTION -->
-  <section id="contact" class="bg-[#121212] py-16 px-6 md:px-12">
-    <div class="max-w-4xl mx-auto text-center mb-10">
-      <div data-reveal class="reveal">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get Your Free Estimate</h2>
-        <p class="text-gray-400 text-lg">Describe your plumbing needs and I'll provide an honest assessment.</p>
-      </div>
-    </div>
-
-    <!-- Contact Form -->
-    <form name="the-house-surgeon" method="POST" class="max-w-3xl mx-auto grid gap-6" data-netlify="true"
-      netlify-honeypot="bot-field">
-
-      <p class="hidden">
-        <label>
-          Don't fill this out if you're human: <input name="bot-field" />
-        </label>
-      </p>
-      <input type="hidden" name="form-name" value="the-house-surgeon" />
-      
-      <input type="text" name="name" placeholder="Your Name" required
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
-      <input type="email" name="email" placeholder="Email Address" required
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
-      <input type="tel" name="phone" placeholder="Phone Number" required
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
-      <select name="service_type"
-        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition">
-        <option value="">Select Service Type</option>
-        <option value="gas">Gas Maintenance</option>
-        <option value="emergency">Emergency Repair</option>
-        <option value="water-softener">New Water Softener Installation</option>
-        <option value="water-heater">New Water Heater Installation</option>
-        <option value="remodel">Bathroom/Kitchen Remodel</option>
-        <option value="other">Other</option>
-      </select>
-      <textarea name="message" rows="5" placeholder="Describe the plumbing issue or project details" required
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition"></textarea>
-      <input type="date" name="preferred_date"
-        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition" />
-      <button type="submit"
-        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
-        Request Estimate
-      </button>
-    </form>
-
-    <!-- Emergency Contact -->
-    <div class="text-center mt-12">
-      <p class="text-gray-400 mb-4">Plumbing emergency? Call now for immediate service:</p>
-      <button id="emergencyButton"
-        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
-        (217) 304-4676
-      </button>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-[#1a1a1a] py-10 px-6 text-center text-gray-500 text-sm">
-    <!-- Social Icons -->
-    <div class="flex justify-center gap-6 mb-6">
-      <!-- Nextdoor -->
-      <a href="https://nextdoor.com/pages/ctn-maintenance-and-handy-services-noblesville-in/" target="_blank"
-        aria-label="Nextdoor" class="text-white hover:text-[#22c55e] transition transform hover:scale-110 duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path
-            d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1.5 4.5v11h3v-11h-3zm-3 3v8h3v-8h-3zm6 0v8h3v-8h-3z" />
+    <!-- Go Home Button - Moved outside sections and enhanced -->
+    <a href="../index.html" aria-label="Go Home"
+        class="fixed top-5 right-5 p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm transition-all duration-300 z-[999999] isolate shadow-lg hover:shadow-xl hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-8 h-8 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 9.75L12 3l9 6.75M4.5 10.5v8.25A1.5 1.5 0 006 20.25h3.75v-6.75h4.5v6.75H18a1.5 1.5 0 001.5-1.5V10.5" />
         </svg>
-      </a>
+    </a>
 
-      <!-- Google Business -->
-      <a href="https://www.google.com/maps/place/South+Side+Indianapolis,+IN/@39.7125,-86.1458,13z" target="_blank"
-        aria-label="Google Business"
-        class="text-white hover:text-[#22c55e] transition transform hover:scale-110 duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path
-            d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-          <path
-            d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
-          <path
-            d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
-          <path
-            d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
-        </svg>
-      </a>
-    </div>
+    <!-- HERO SECTION -->
+    <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
 
-    <!-- Contact Information -->
-    <div class="mb-6 text-gray-400">
-      <p class="font-semibold text-white mb-1">Michaeleana Crenshaw</p>
-      <p class="mb-1">CTN Owner/Operator</p>
-      <a href="tel:2173044676" class="hover:text-[#22c55e] transition-colors duration-300">
-        (217) 304-4676
-      </a>
-    </div>
+        <!-- Background Video - Professional plumbing work -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
+            <video autoplay muted loop playsinline class="hero-video" poster="assets/images/hero-faucet-poster.png">
+                <source src="assets/clips/hero-faucet-clip.mp4" type="video/mp4" />
+            </video>
+        </div>
 
-    <!-- Payment Button -->
-    <div class="mb-6">
-      <a href="../payment/?business=plumber" 
-         class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#22c55e] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-8 rounded-lg transition duration-300 shadow-lg transform hover:scale-105">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-        </svg>
-        Make Payment
-      </a>
-    </div>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
-    <!-- Copyright -->
-    <p>© <span id="year">2025</span> The House Surgeon — all things home repair. All rights reserved.</p>
-  </footer>
+        <!-- Hero Content -->
+        <div class="relative z-10 px-6 md:px-12 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white drop-shadow-lg">
+                The House Surgeon
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">
+                We can't be us, without YOU. Saving the world one home at a time.
+            </p>
+            <div>
+                <a href="#portfolio"
+                    class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold me-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+                    View My Work
+                </a>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold ms-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Video Clips Script -->
-  <script src="./scripts/clips.js"></script>
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
 
-  <!-- FINAL INTERACTIVITY SCRIPT -->
-  <script src="./scripts/main.js"></script>
+        <div class="max-w-6xl mx-auto text-center mb-12">
+            <div data-reveal class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Recent Projects</h2>
+                <p class="text-gray-400 text-lg">Quality workmanship across residential and commercial properties.</p>
+            </div>
+        </div>
 
-  <!-- Onload UX fade -->
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      document.body.classList.add('fade-in');
-    });
-  </script>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Portfolio Items -->
+            <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+                <video id="video1" class="w-full h-[28rem] object-cover rounded"
+                    poster="assets/images/gas-image-poster.jpg" preload="metadata" playsinline>
+                    <source src="assets/clips/gas-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional Play Button Overlay -->
+                <div onclick="togglePlay('video1')"
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white text-4xl font-bold">▶</span>
+                </div>
+            </div>
+
+            <!-- Image Slideshow Container -->
+            <div id="image-slideshow" class="relative w-full h-[28rem] overflow-hidden rounded shadow-lg">
+                <img src="assets/images/projects-toilet.jpg" alt="Newly installed modern toilet"
+                    class="slideshow-image active">
+                <img src="assets/images/projects-boiler.jpg" alt="Commercial boiler system maintenance"
+                    class="slideshow-image">
+                <img src="assets/images/projects-sink.jpg" alt="Kitchen sink and faucet installation"
+                    class="slideshow-image">
+                <img src="assets/images/projects-refrigerant.jpg" alt="Refrigerant line repair and service"
+                    class="slideshow-image">
+            </div>
+
+            <!-- Flipping Card Container -->
+            <div class="flip-card h-[28rem] w-full [perspective:1000px] cursor-pointer">
+                <div
+                    class="flip-card-inner relative w-full h-full text-center transition-transform duration-700 [transform-style:preserve-3d]">
+                    <!-- Front Face -->
+                    <div
+                        class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] overflow-hidden rounded shadow-lg">
+                        <img src="assets/images/water-softener-after.png"
+                            alt="New water softener system after installation" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Back Face -->
+                    <div
+                        class="absolute w-full h-full [-webkit-backface-visibility:hidden] [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden rounded shadow-lg">
+                        <img src="assets/images/water-softener-before.png"
+                            alt="Old water softener system before replacement" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES & PRICING SECTION -->
+    <section id="services" class="bg-[#121212] py-16 px-6 md:px-12">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <div data-reveal class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Services & Pricing</h2>
+                <p class="text-gray-400 text-lg">Professional plumbing services for every need. Upfront pricing with no
+                    hidden
+                    fees.</p>
+            </div>
+        </div>
+
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+
+            <!-- Service Cards -->
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">FaceTime Diagnostics</h3>
+                <p class="text-gray-400 mb-4">Save time and money. Sometimes we can help you fix it right over the call!</p>
+                <p class="text-gray-400 mb-4">Perfect for getting live help from a licensed plumber.</p>
+                <p class="text-gray-400 mb-4">• minor plumbing issues, quick checks, professional advice, identifying problems, or DIY assistance.</p>
+                <p class="text-white text-lg mb-4">Only <span class="font-bold">$50</span></p>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Schedule
+                    Service</a>
+            </div>
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Service Fee</h3>
+                <p class="text-gray-400 mb-4">No hidden charges. Our fee goes toward the cost of any repair or work performed.</p>
+                <p class="text-gray-400 mb-4">Ideal for non-urgent issues during normal business hours.</p>
+                <p class="text-gray-400 mb-4">• leaky faucets, gas smells, slow drains, running toilets, water heater maintenence, and estimates.</p>
+                <p class="text-white text-lg mb-4">Low & redeemable <span class="font-bold">$96</span></p>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Call
+                    Now</a>
+            </div>
+
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-green-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Emergency Repairs</h3>
+                <p class="text-gray-400 mb-4">Rapid 24/7 dispatch of a licensed plumber to your location.</p>
+                <p class="text-gray-400 mb-4">Problems that can't wait - including nights, weekends, and holidays.</p>
+                <p class="text-gray-400 mb-4">• major water leaks or floods, burst pipes, sewer backups, no water supply, no gas in winter.</p>
+                <p class="text-white text-lg mb-4">Urgent help for only <span class="font-bold">$200</span></p>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(34,197,94,0.6)]">Get
+                    Quote</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-center">
+
+            <!-- Style Visual + Social Proof -->
+            <div class="flex flex-col items-center md:items-start text-center md:text-right">
+                <img src="../images/house-surgeon-logo.PNG" alt="The House Surgeon Logo" id="plumber-img"
+                    class="w-64 h-64 object-cover rounded-md border-4 border-[#22c55e] mb-6 shadow-lg" />
+                <div data-reveal class="reveal">
+                    <div class="text-sm text-gray-400 italic max-w-md">
+                        "Floyd saved our kitchen renovation when another plumber walked off the job. Professional,
+                        knowledgeable,
+                        and fair pricing. We'll never call anyone else."
+                        <br />
+                        <span class="text-white font-semibold mt-2 block">– Daryl Starks, Homeowner</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bio & Story -->
+            <div>
+                <div data-reveal class="reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Meet Floyd</h2>
+                    <p class="text-gray-400 mb-4">
+                        I'm Floyd, a licensed plumbing contractor proudly serving Indianpolis and the surrounding areas.
+                        With over
+                        seven years in the plumbing field, I specialize in plumbing, gas, and water quality, delivering
+                        reliable
+                        service for homeowners and businesses who value real craftsmanship.
+                    </p>
+                    <p class="text-gray-400 mb-4">
+                        My approach is straightforward: diagnose the problem correctly, explain your options clearly,
+                        and get it
+                        done properly the first time. I'm fully licensed, bonded, and insured, and I stand behind every
+                        job with
+                        real accountability.
+                    </p>
+                    <p class="text-gray-400 mb-4">
+                        Need urgent help? I offer emergency service for serious situations - with emergency visits
+                        starting at $200.
+                        Skilled hands, solid work. That's how we do it.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FACETIME DIAGNOSTICS SECTION -->
+    <section id="facetime-diagnostics" class="bg-[#121212] py-16 px-6 md:px-12">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <div data-reveal class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">FaceTime Diagnostics</h2>
+                <p class="text-gray-400 text-lg">Get expert guidance remotely before scheduling an on-site visit.</p>
+            </div>
+        </div>
+
+        <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+            <!-- What We Can Help With -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-semibold text-white mb-4">How We Can Help</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li>• Visually inspect your plumbing problem and provide an initial assessment</li>
+                    <li>• Identify urgency level and offer safety guidance</li>
+                    <li>• Advise whether an on-site visit is necessary</li>
+                    <li>• Guide you step-by-step to fix small issues yourself</li>
+                    <li>• Preliminary cost estimates</li>
+                </ul>
+            </div>
+
+            <!-- What You'll Need -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-semibold text-white mb-4">What You'll Need</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li>• iPhone or device with FaceTime</li>
+                    <li>• Good lighting around the problem area</li>
+                    <li>• Ability to show the issue clearly</li>
+                    <li>• Basic description of symptoms</li>
+                    <li>• 15-30 minutes available</li>
+                    <li>• Schedule a FaceTime call</li>
+                    <li>• Show me the problem via video</li>
+                </ul>
+            </div>
+
+            <!-- How It Works -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-semibold text-white mb-4">Get professional recommendations</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li>• How to shut of your main water valve</li>
+                    <li>• Checking water heater settings</li>
+                    <li>• Identifying types of leaks</li>
+                    <li>• Simple faucet repairs</li>
+                    <li>• Advice before purchasing plumbing fixtures</li>
+                    <li>• Receive next steps guidance</li>
+                    <li>• Book on-site visit if needed</li>
+                </ul>
+                <!-- <ul class="text-gray-400 space-y-2">
+                    <li>• Schedule a FaceTime call</li>
+                    <li>• Show me the problem via video</li>
+                    <li>• Get expert assessment remotely</li>
+                    <li>• Receive next steps guidance</li>
+                    <li>• Book on-site visit if needed</li>
+                </ul> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="bg-[#121212] py-16 px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+            <div data-reveal class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Get Your Free Estimate</h2>
+                <p class="text-gray-400 text-lg">Describe your plumbing needs and I'll provide an honest assessment.</p>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form name="the-house-surgeon" method="POST" class="max-w-3xl mx-auto grid gap-6" data-netlify="true"
+            netlify-honeypot="bot-field">
+
+            <p class="hidden">
+                <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+            </p>
+            <input type="hidden" name="form-name" value="the-house-surgeon" />
+
+            <input type="text" name="name" placeholder="Your Name" required
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+            <input type="email" name="email" placeholder="Email Address" required
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+            <input type="tel" name="phone" placeholder="Phone Number" required
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+            <select name="service_type"
+                class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition">
+                <option value="">Select Service Type</option>
+                <option value="gas">Gas Maintenance</option>
+                <option value="emergency">Emergency Repair</option>
+                <option value="water-softener">New Water Softener Installation</option>
+                <option value="water-heater">New Water Heater Installation</option>
+                <option value="remodel">Bathroom/Kitchen Remodel</option>
+                <option value="other">Other</option>
+            </select>
+            <textarea name="message" rows="5" placeholder="Describe the plumbing issue or project details" required
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition"></textarea>
+            <input type="date" name="preferred_date"
+                class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition" />
+            <button type="submit"
+                class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
+                Request Estimate
+            </button>
+        </form>
+
+        <!-- Emergency Contact -->
+        <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto py-4 mt-12 items-center">
+            <!-- First Column: How to Decide -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-semibold text-white mb-4">How to Decide:</h3>
+                <div class="space-y-3">
+                    <div class="flex items-center justify-center md:justify-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-gray-400"><span class="font-bold text-gray-300">FaceTime Diagnostics</span> ($50): Minor issue, need instant virtual help.</span>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-gray-400"><span class="font-bold text-gray-300">Service Call</span> ($96): Normal, non-urgent on-site inspection.</span>
+                    </div>
+                    <div class="flex items-center justify-center md:justify-start">
+                        <svg class="w-5 h-5 text-green-500 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-gray-400"><span class="font-bold text-gray-300">Emergency Service</span> ($200): Serious issue, need immediate assistance.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Column: Original Emergency Contact -->
+            <div class="text-center">
+                <p class="text-gray-400 mb-4">Plumbing emergency? <span class="font-bold text-white">CALL NOW</span> for immediate service or FaceTime assistance:</p>
+                <button id="emergencyButton"
+                    class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
+                    (217) 304-4676
+                </button>
+            </div>
+
+            <!-- Third Column: FaceTime Logo -->
+            <div class="flex justify-center md:justify-end">
+                <img src="assets/images/crentoon-facetime-logo.png" alt="FaceTime Diagnostics" class="w-48 h-48 object-cover rounded-md border-4 border-[#22c55e] mb-6 shadow-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#1a1a1a] py-10 px-6 text-center text-gray-500 text-sm">
+        <!-- Social Icons -->
+        <div class="flex justify-center gap-6 mb-6">
+            <!-- Nextdoor -->
+            <a href="https://nextdoor.com/pages/ctn-maintenance-and-handy-services-noblesville-in/" target="_blank"
+                aria-label="Nextdoor"
+                class="text-white hover:text-[#22c55e] transition transform hover:scale-110 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm-1.5 4.5v11h3v-11h-3zm-3 3v8h3v-8h-3zm6 0v8h3v-8h-3z" />
+                </svg>
+            </a>
+
+            <!-- Google Business -->
+            <a href="https://www.google.com/maps/place/South+Side+Indianapolis,+IN/@39.7125,-86.1458,13z"
+                target="_blank" aria-label="Google Business"
+                class="text-white hover:text-[#22c55e] transition transform hover:scale-110 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                    <path
+                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                    <path
+                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                    <path
+                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="mb-6 text-gray-400">
+            <p class="font-semibold text-white mb-1">Michaeleana Crenshaw</p>
+            <p class="mb-1">CTN Owner/Operator</p>
+            <a href="tel:2173044676" class="hover:text-[#22c55e] transition-colors duration-300">
+                (217) 304-4676
+            </a>
+        </div>
+
+        <!-- Payment Button -->
+        <div class="mb-6">
+            <a href="../payment/?business=plumber"
+                class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#22c55e] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-8 rounded-lg transition duration-300 shadow-lg transform hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline mr-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+                Make Payment
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <p>© <span id="year">2025</span> The House Surgeon — all things home repair. All rights reserved.</p>
+    </footer>
+
+    <!-- Video Clips Script -->
+    <script src="./scripts/clips.js"></script>
+
+    <!-- FINAL INTERACTIVITY SCRIPT -->
+    <script src="./scripts/main.js"></script>
+
+    <!-- Onload UX fade -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.add('fade-in');
+        });
+    </script>
 </body>
 
 </html>
