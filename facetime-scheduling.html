@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Schedule a FaceTime diagnostic session with Floyd - Get professional plumbing advice remotely for just $50.">
+    <meta property="og:title" content="FaceTime Scheduling | The House Surgeon">
+    <meta property="og:description"
+        content="Schedule a FaceTime diagnostic session with Floyd - Get professional plumbing advice remotely for just $50.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/crentoon-facetime-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/floyd-favicon.jpg">
+
+    <title>FaceTime Scheduling | The House Surgeon</title>
+    
+    <!-- Tailwind CDN (same as plumbing site) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font: Inter (same as plumbing site) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="antialiased">
+    <div class="container">
+        <!-- Background animated elements -->
+        <!-- <div class="bg-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div> -->
+
+        <!-- Go Home Button -->
+        <a href="index.html" aria-label="Go Home" class="go-home-button">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 9.75L12 3l9 6.75M4.5 10.5v8.25A1.5 1.5 0 006 20.25h3.75v-6.75h4.5v6.75H18a1.5 1.5 0 001.5-1.5V10.5" />
+            </svg>
+        </a>
+
+        <div class="content">
+            <!-- Header Section -->
+            <div class="profile-section">
+                <div class="profile-image-container">
+                    <img src="images/crentoon-facetime-logo.png" alt="FaceTime Diagnostics Logo" class="profile-image">
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="profile-info">
+                    <h1 class="name">FaceTime Diagnostics</h1>
+                    <p class="tagline opacity-50">Professional plumbing advice remotely</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span>Only $50 - Save time and money</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>15-30 minute sessions</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>Expert guidance from a licensed plumber</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scheduling Form Section -->
+            <div class="scheduling-form-container">
+                <div class="form-header">
+                    <h2>Schedule Your FaceTime Session</h2>
+                    <p>Fill out the form below to schedule your remote diagnostic session with Floyd</p>
+                </div>
+
+                <form name="facetime-scheduling" method="POST" class="max-w-3xl mx-auto grid gap-6" data-netlify="true"
+                    netlify-honeypot="bot-field">
+                    
+                    <p class="hidden">
+                        <label>
+                            Don't fill this out if you're human: <input name="bot-field" />
+                        </label>
+                    </p>
+                    <input type="hidden" name="form-name" value="facetime-scheduling" />
+
+                    <input type="text" name="name" placeholder="Your Name" required
+                        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+                    <input type="tel" name="phone" placeholder="Phone Number (for FaceTime)" required
+                        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition" />
+                             <input type="date" name="preferred_date"
+                class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition" />
+                    <select name="preferred_time" required
+                        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-green-500 outline-none transition">
+                        <option value="">Select Preferred Time</option>
+                        <option value="8:00 AM">8:00 AM</option>
+                        <option value="9:00 AM">9:00 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="1:00 PM">1:00 PM</option>
+                        <option value="2:00 PM">2:00 PM</option>
+                        <option value="3:00 PM">3:00 PM</option>
+                        <option value="4:00 PM">4:00 PM</option>
+                        <option value="5:00 PM">5:00 PM</option>
+                        <option value="6:00 PM">6:00 PM</option>
+                        <option value="7:00 PM">7:00 PM</option>
+                    </select>
+                      <textarea name="message" rows="5" placeholder="Describe the plumbing issue or project details" required
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-green-500 outline-none transition"></textarea>
+           
+                    <button type="submit"
+                        class="inline-block bg-gradient-to-r from-[#1f7a3b] via-[#2aa42a] to-[#1f7a3b] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
+                        Schedule FaceTime Session
+                    </button>
+                </form>
+
+                <!-- What to Expect Section -->
+                <div class="what-to-expect">
+                    <h3>What to Expect</h3>
+                    <div class="expectations-grid">
+                        <div class="expectation-item">
+                            <h4>Before the Call</h4>
+                            <ul>
+                                <li>Payment confirmation ($50)</li>
+                                <li>FaceTime appointment confirmation</li>
+                                <li>Preparation checklist sent via email</li>
+                            </ul>
+                        </div>
+                        <div class="expectation-item">
+                            <h4>During the Call</h4>
+                            <ul>
+                                <li>Visual inspection of the problem</li>
+                                <li>Professional assessment and advice</li>
+                                <li>Step-by-step guidance if applicable</li>
+                            </ul>
+                        </div>
+                        <div class="expectation-item">
+                            <h4>After the Call</h4>
+                            <ul>
+                                <li>Written summary of recommendations</li>
+                                <li>Next steps and follow-up options</li>
+                                <li>On-site visit scheduling if needed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
