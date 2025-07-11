@@ -54,6 +54,9 @@ function setupBusinessCardHandlers() {
             if (business === 'plumbing') {
                 transitionText.textContent = 'Loading Plumbing Services...';
                 spinner.style.borderTopColor = '#22c55e';
+            } else if (business === 'facetime') {
+                transitionText.textContent = 'Loading FaceTime Diagnostic Services...';
+                spinner.style.borderTopColor = '#8d9c3a';
             } else {
                 transitionText.textContent = 'Loading Videography Portfolio...';
                 spinner.style.borderTopColor = '#f97316';

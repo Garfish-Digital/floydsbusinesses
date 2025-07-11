@@ -285,9 +285,11 @@ body {
     border-color: #f97316;
 }
 
-.business-card.faceTime {
+.business-card.facetime {
     background: linear-gradient(135deg, #7a1f1f55, #7a1f1f33);
     border-color: #8d9c3a;
+    animation: pulse-border 6s ease-in-out infinite;
+    transition: all 0.3s ease;
 }
 
 .business-card:hover {
@@ -619,5 +621,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     
     .submit-button {
         padding: 0.8rem 1.5rem;
+    }
+}
+
+/* Pulse animation for border */
+@keyframes pulse-border {
+    0%, 100% {
+        border-color: #22c55e;
+        background: black;
+    }
+    25% {
+        border-color: rgb(255, 255, 255, .75);
+        background: rgb(255, 255, 255, .05);
+        border-color: rgb(255, 255, 0);
+        background: rgb(255, 255, 0, .1);
+    }
+    50% {
+        border-color: #f97316;
+        background: black;
+    }
+    75% {
+        border-color: rgb(255, 255, 255, .75);
+        background: rgb(255, 255, 255, .05);
+        border-color: rgb(255, 255, 0);
+        background: rgb(255, 255, 0, .1);
     }
 }
