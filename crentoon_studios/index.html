@@ -2,191 +2,199 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Authentic urban videography in Indianapolis for local artists, musicians, and creatives." />
-  <meta name="author" content="Independent Videographer" />
-  <meta property="og:title" content="Crentoon Studios | Indianapolis Videography" />
-  <meta property="og:description"
-    content="Authentic urban videography in Indianapolis for local artists, musicians, and creatives." />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="preview.jpg" />
-  <meta name="theme-color" content="#1a1a1a" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/crentoon-studios-favicon.PNG">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Authentic urban videography in Indianapolis for local artists, musicians, and creatives." />
+    <meta name="author" content="Independent Videographer" />
+    <meta property="og:title" content="Crentoon Studios | Indianapolis Videography" />
+    <meta property="og:description"
+        content="Authentic urban videography in Indianapolis for local artists, musicians, and creatives." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="preview.jpg" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/crentoon-studios-favicon.PNG">
 
-  <title>Crentoon Studios | Indianapolis Videography</title>
+    <title>Crentoon Studios | Indianapolis Videography</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Font: Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Global Styles -->
-  <link rel="stylesheet" href="./styles/style.css">
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body class="antialiased">
-  <!-- Custom Cursor Element -->
-  <div id="cursor" class="custom-cursor hidden md:block"></div>
+    <!-- Custom Cursor Element -->
+    <div id="cursor" class="custom-cursor hidden md:block"></div>
 
-  <!-- Go Home Button - Moved outside sections and enhanced -->
-  <a href="../index.html" aria-label="Go Home"
-    class="fixed top-5 right-5 p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm transition-all duration-300 z-[999999] isolate shadow-lg hover:shadow-xl hover:scale-105">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-      class="w-8 h-8 text-white">
-      <path stroke-linecap="round" stroke-linejoin="round"
-        d="M3 9.75L12 3l9 6.75M4.5 10.5v8.25A1.5 1.5 0 006 20.25h3.75v-6.75h4.5v6.75H18a1.5 1.5 0 001.5-1.5V10.5" />
-    </svg>
-  </a>
+    <!-- Go Home Button - Moved outside sections and enhanced -->
+    <a href="../index.html" aria-label="Go Home"
+        class="fixed top-5 right-5 p-3 rounded-full bg-white/30 hover:bg-white/40 backdrop-blur-sm transition-all duration-300 z-[999999] isolate shadow-lg hover:shadow-xl hover:scale-105">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-8 h-8 text-white">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 9.75L12 3l9 6.75M4.5 10.5v8.25A1.5 1.5 0 006 20.25h3.75v-6.75h4.5v6.75H18a1.5 1.5 0 001.5-1.5V10.5" />
+        </svg>
+    </a>
 
-  <!-- HERO SECTION -->
-  <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
+    <!-- HERO SECTION -->
+    <section class="relative h-screen w-full overflow-hidden flex items-center justify-center text-center">
 
-    <!-- Background Video - Cropped to remove titles -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
-      <video autoplay muted loop playsinline class="hero-video" poster="assets/images/hero-drone-poster.png">
-        <source src="assets/clips/hero-drone-clip.mp4" type="video/mp4" />
-      </video>
-    </div>
-
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
-
-    <!-- Hero Content -->
-    <div class="relative z-10 px-6 md:px-12 max-w-3xl">
-      <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white drop-shadow-lg">
-        Crentoon Studios
-      </h1>
-      <p class="text-lg md:text-xl text-gray-300 mb-8">
-        Authentic visuals for creators, artists, and local businesses.
-      </p>
-      <div>
-        <a href="#portfolio"
-          class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold me-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
-          View Portfolio
-        </a>
-        <a href="#contact"
-          class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold ms-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
-          Contact Me
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PORTFOLIO SECTION -->
-  <section id="portfolio" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
-
-    <div class="max-w-6xl mx-auto text-center mb-12">
-      <div data-reveal class="reveal">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Portfolio</h2>
-        <p class="text-gray-400 text-lg">Selected work across documentary and creative industries.</p>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Portfolio Items 1 -->
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video4" class="w-full h-[40rem] md:h-[55rem] object-cover rounded"
-          poster="assets/images/portfolio-4-poster.png" preload="auto" playsinline crossorigin="anonymous">
-          <source src="assets/clips/portfolio-4-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
-          Your browser does not support the video tag.
-        </video>
-
-        <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video4')"
-          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
-          <span class="text-white text-4xl font-bold">▶</span>
+        <!-- Background Video - Cropped to remove titles -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-[-1]">
+            <video autoplay muted loop playsinline class="hero-video" poster="assets/images/hero-drone-poster.png">
+                <source src="assets/clips/hero-drone-clip.mp4" type="video/mp4" />
+            </video>
         </div>
-      </div>
 
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video5" class="w-full h-[40rem] md:h-[55rem] object-cover rounded"
-          poster="assets/images/portfolio-5-poster.png" preload="auto" playsinline crossorigin="anonymous">
-          <source src="assets/clips/portfolio-5-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
-          Your browser does not support the video tag.
-        </video>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
 
-        <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video5')"
-          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
-          <span class="text-white text-4xl font-bold">▶</span>
+        <!-- Hero Content -->
+        <div class="relative z-10 px-6 md:px-12 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 text-white drop-shadow-lg">
+                Crentoon Studios
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-8">
+                Authentic visuals for creators, artists, and local businesses.
+            </p>
+            <div>
+                <a href="#portfolio"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold me-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+                    View Portfolio
+                </a>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold ms-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+                    Contact Me
+                </a>
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video6" class="w-full h-[40rem] md:h-[55rem] object-cover rounded"
-          poster="assets/images/portfolio-6-poster.png" preload="auto" playsinline crossorigin="anonymous">
-          <source src="assets/clips/portfolio-6-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
-          Your browser does not support the video tag.
-        </video>
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
 
-        <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video6')"
-          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
-          <span class="text-white text-4xl font-bold">▶</span>
+        <div class="max-w-6xl mx-auto text-center mb-12">
+            <div data-reveal class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Portfolio</h2>
+                <p class="text-gray-400 text-lg">Selected work across documentary and creative industries.</p>
+            </div>
         </div>
-      </div>
 
-      <!-- Portfolio Items 2 -->
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video7" class="w-full h-[28rem] object-cover rounded" preload="metadata" playsinline>
-          <source src="assets/clips/portfolio-7-clip.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video7')"
-          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
-          <span class="text-white text-4xl font-bold">▶</span>
+            <!-- Portfolio Items 1 -->
+            <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+                <video id="video4" class="w-full aspect-[2/3] md:h-[55rem] object-cover rounded"
+                    poster="assets/images/portfolio-4-poster.png" preload="auto" playsinline crossorigin="anonymous">
+                    <source src="assets/clips/portfolio-4-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional Play Button Overlay -->
+                <div onclick="togglePlay('video4')"
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white text-4xl font-bold">▶</span>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+                <video id="video5" class="w-full aspect-[2/3] md:h-[55rem] object-cover rounded"
+                    poster="assets/images/portfolio-5-poster.png" preload="auto" playsinline crossorigin="anonymous">
+                    <source src="assets/clips/portfolio-5-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional Play Button Overlay -->
+                <div onclick="togglePlay('video5')"
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white text-4xl font-bold">▶</span>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+                <video id="video6" class="w-full aspect-[2/3] md:h-[55rem] object-cover rounded"
+                    poster="assets/images/portfolio-6-poster.png" preload="auto" playsinline crossorigin="anonymous">
+                    <source src="assets/clips/portfolio-6-clip.mp4" type="video/mp4; codecs=avc1.42E01E,mp4a.40.2" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional Play Button Overlay -->
+                <div onclick="togglePlay('video6')"
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white text-4xl font-bold">▶</span>
+                </div>
+            </div>
+
         </div>
-      </div>
 
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video2" class="w-full h-[28rem] object-cover rounded" poster="assets/images/portfolio-2-poster.png"
-          preload="metadata" playsinline>
-          <source src="assets/clips/portfolio-2-clip.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <!-- Portfolio Items 2 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-4 gap-6">
 
-        <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video2')"
-          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
-          <span class="text-white text-4xl font-bold">▶</span>
+            <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+                <video id="video7" class="w-full aspect-[3/2] object-cover rounded"
+                    poster="assets/images/portfolio-7-poster.jpg" preload="metadata" playsinline>
+                    <source src="assets/clips/portfolio-7-clip.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional Play Button Overlay -->
+                <div onclick="togglePlay('video7')"
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white text-4xl font-bold">▶</span>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+                <video id="video2" class="w-full aspect-[3/2] object-cover rounded"
+                    poster="assets/images/portfolio-2-poster.jpg" preload="metadata" playsinline>
+                    <source src="assets/clips/portfolio-2-clip.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional Play Button Overlay -->
+                <div onclick="togglePlay('video2')"
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white text-4xl font-bold">▶</span>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
+                <video id="video3" class="w-full aspect-[3/2] object-cover rounded"
+                    poster="assets/images/portfolio-3-poster.png" preload="metadata" playsinline>
+                    <source src="assets/clips/portfolio-3-clip.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Optional Play Button Overlay -->
+                <div onclick="togglePlay('video3')"
+                    class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
+                    <span class="text-white text-4xl font-bold">▶</span>
+                </div>
+            </div>
+
         </div>
-      </div>
+    </section>
 
-      <div class="group relative overflow-hidden rounded shadow-lg cursor-pointer">
-        <video id="video3" class="w-full h-[28rem] object-cover rounded" poster="assets/images/portfolio-3-poster.png"
-          preload="metadata" playsinline>
-          <source src="assets/clips/portfolio-3-clip.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-
-        <!-- Optional Play Button Overlay -->
-        <div onclick="togglePlay('video3')"
-          class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition">
-          <span class="text-white text-4xl font-bold">▶</span>
+    <!-- SERVICES & PRICING SECTION -->
+    <section id="services" class="bg-[#121212] py-16 px-6 md:px-12">
+        <div class="max-w-5xl mx-auto text-center mb-12">
+            <div data-reveal class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Services & Pricing</h2>
+                <p class="text-gray-400 text-lg">Tailored visual content for every stage of your creative journey.
+                    Transparent pricing. No Surprises
+                <p class="text-gray-400 text-lg italic">Short on funds? Reach out anyway and maybe we can still put
+                    something together.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SERVICES & PRICING SECTION -->
-  <section id="services" class="bg-[#121212] py-16 px-6 md:px-12">
-    <div class="max-w-5xl mx-auto text-center mb-12">
-      <div data-reveal class="reveal">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Services & Pricing</h2>
-        <p class="text-gray-400 text-lg">Tailored visual content for every stage of your creative journey. Transparent
-          pricing. No surprises.</p>
-      </div>
-    </div>
-
-    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        <!-- <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
       <div
         class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-orange-500 transition duration-300">
         <h3 class="text-xl font-semibold text-white mb-2">Music Video Package</h3>
@@ -216,157 +224,281 @@
           class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(255,61,0,0.6)]">Get
           a Quote</a>
       </div>
-    </div>
-  </section>
+    </div> -->
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
-    <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-center">
-      <!-- Bio & Story -->
-      <div>
-        <div data-reveal class="reveal">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-orange-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Quick Reel</h3>
+                <p class="text-gray-400 mb-4">30 min. shoot, 1 location, 1 reel (15-30 sec), basic music overlay</p>
+                <p class="text-gray-400 mb-4">Perfect for: Anyone on a tight budget wanting a fast, professional reel
+                    for social media. Great for simple announcements, quick promos. or personal brand highlights.</p>
+                <p class="text-gray-400 mb-4">Why this price? Short sessions means minimal shooting and faster edits,
+                    using simpler gear and no complex color grading, so it stays affordable.</p>
+                <p>&nbsp; </p>
+                <p>&nbsp; </p>
+                <a href="#contact" class="text-white font-bold text-lg mb-4 block">$200</a>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(255,61,0,0.6)]">Book
+                    Now</a>
+            </div>
 
-          <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Behind the Lens</h2>
-          <p class="text-gray-400 mb-4">
-            I'm Floyd, an independent videographer in Indianapolis. I work with local artists,
-            musicians, small businesses, and people just like you to create visuals that feel as real as the places they
-            come from.
-          </p>
-          <p class="text-gray-400 mb-4">
-            My style is raw but polished — urban documentary meets cinematic storytelling. Whether I'm shooting in a
-            graffiti-covered alley or a packed venue, I aim to make every frame feel alive.
-          </p>
-          <p class="text-gray-400">
-            I shoot primarily with Sony mirrorless gear and a lightweight gimbal rig, making me agile for fast-paced
-            shoots without compromising quality.
-          </p>
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-orange-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Starter Pack</h3>
+                <p class="text-gray-400 mb-4">1 hour shoot, 1 location, 2 reels (15-60 sec), light color correction</p>
+                <p class="text-gray-400 mb-4">Perfect for: Small businesses or creators who need a bit more time and
+                    flexibility. Great for capturing multiple angles or outfits, or delivering slightly longer social
+                    content.</p>
+                <p class="text-gray-400 mb-4">Why this price? Covers extra time on set, more footage to edit, and basic
+                    color correction work, which requires time and software expertise.</p>
+                <p>&nbsp; </p>
+                <p>&nbsp; </p>
+                <a href="#contact" class="text-white font-bold text-lg mb-4 block">$500</a>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(255,61,0,0.6)]">Start
+                    a
+                    Project</a>
+            </div>
+
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-orange-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Creator Session</h3>
+                <p class="text-gray-400 mb-4">1.5 hour shoot, up to 2 locations, 3 reels or 1 short promo (up to 60
+                    sec), basic motion graphics, music overlay</p>
+                <p class="text-gray-400 mb-4">Perfect for: Content creators or business owners looking to diversify
+                    their feed with different looks or storytelling. Ideal for small brand promos, product features, or
+                    influencer reels.</p>
+                <p class="text-gray-400 mb-4">Why this price? Includes traveling between locations, additional footage
+                    to edit, and the time and skill needed to add basic motion graphics, transitions, and music syncing.
+                </p>
+                <a href="#contact" class="text-white font-bold text-lg mb-4 block">$750</a>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(255,61,0,0.6)]">Get
+                    a Quote</a>
+            </div>
         </div>
-      </div>
 
-      <!-- Style Visual + Social Proof -->
-      <div class="flex flex-col items-center md:items-end text-center md:text-right">
-        <img src="../images/crentoon-logo.PNG" alt="Crentoon Studios Logo"
-          class="w-64 h-64 object-cover rounded-md border-4 border-[#f97316] mb-6 shadow-lg" />
-        <div data-reveal class="reveal">
-          <div class="text-sm text-gray-400 italic max-w-md">
-            "Working with Floyd felt more like a creative partnership than a transaction. The results speak for
-            themselves."
-            <br />
-            <span class="text-white font-semibold mt-2 block">– Helen Garett, Local Artist</span>
-          </div>
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto mt-4">
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-orange-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Premium Package</h3>
+                <p class="text-gray-400 mb-4">2-3 hour shoot, up to 3 locatins, 4-5 reels or 1 longer promo video (up to
+                    2 minutes), pro color grading, custom graphics, interview audio (if needed)</p>
+                <p class="text-gray-400 mb-4">Perfect for: Businesses or influencers who want polished storytelling,
+                    professional color grading, and custom branding. Great for interviews, promotional films, or
+                    multiple pieces of content from one shoot.</p>
+                <p class="text-gray-400 mb-4">Why this price? Longer shoot time, multiple locations, higher-end cameras
+                    and audio gear, and significant post-production time for color grading, graphics, and advanced edits
+                    all increase costs.</p>
+                <a href="#contact" class="text-white font-bold text-lg mb-4 block">$1,300</a>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(255,61,0,0.6)]">Create
+                    Content</a>
+            </div>
+
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-orange-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Hefty Package</h3>
+                <p class="text-gray-400 mb-4">half-day shoot 9 (up to 4 hours), multi location, drone included, 4 +
+                    reels + 1 long-form video (3-5 min), advanced graphics & editing, storyboarding included</p>
+                <p class="text-gray-400 mb-4">Perfect for: Clients ready for cinematic storytelling and high-end
+                    production. Excellent for brand launches, commercial spots, real estate showcases, or signature
+                    personal brand pieces.</p>
+                <p class="text-gray-400 mb-4">Why this price? Includes professional drone operation, advanced cinematic
+                    equipment, a full pre-planned shoot (storyboards), complex edits, and longer work hours both on-set
+                    and in post-production.</p>
+                <a href="#contact" class="text-white font-bold text-lg mb-4 block">$2,200</a>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(255,61,0,0.6)]">Tell
+                    a Story</a>
+            </div>
+
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-orange-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Month to Month</h3>
+                <p class="text-gray-400 mb-4">2-3 shoots per month, 6-10 reels total, 1-2 long-form videos, strategy
+                    sessions, Tik Tok / IG / YT cuts</p>
+                <p class="text-gray-400 mb-4">Perfect for: Businesses, brands, and influencers needing consistent
+                    professional content every months to keep feeds active and engage audiences. Great for buiding
+                    momentum and maintaining a professional presence.</p>
+                <p class="text-gray-400 mb-4">Why this price? Combines multiple shoot days, bulk editing hours, planning
+                    time, and strategic guidance - providing clients with consistent, premium content at a lower
+                    per-video cost than booking one project at a time.</p>
+                <p>&nbsp; </p>
+                <a href="#contact" class="text-white font-bold text-lg mb-4 block">$2,500 - $3,500 / mo</a>
+                <a href="#contact"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:shadow-[0_0_20px_rgba(255,61,0,0.6)]">Build
+                    a Brand</a>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- CONTACT & BOOKING SECTION -->
-  <section id="contact" class="bg-[#121212] py-16 px-6 md:px-12">
-    <div class="max-w-4xl mx-auto text-center mb-10">
-      <div data-reveal class="reveal">
-        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Work Together</h2>
-        <p class="text-gray-400 text-lg">Tell me about your project and let's make something powerful.</p>
-      </div>
-    </div>
 
-    <!-- Contact Form -->
-    <form name="crentoon_studios" method="POST" class="max-w-3xl mx-auto grid gap-6" data-netlify="true"
-      netlify-honeypot="bot-field">
+        <div class="grid gap-8 max-w-6xl mx-auto mt-4">
+            <div
+                class="bg-[#1e1e1e] p-6 rounded-lg shadow-lg border border-gray-700 hover:border-orange-500 transition duration-300">
+                <h3 class="text-xl font-semibold text-white mb-2">Add Ons</h3>
+                <p class="text-gray-400 mb-4 text-center">Drone footage: +$200 - $500 ♦️ Rush delivery (48 hr): +$300 ♦️
+                    Extra hour: +$200 - $300 / hr ♦️ Second shooter: +$400 - $800</p>
+            </div>
+        </div>
 
-      <p class="hidden">
-        <label>
-          Don't fill this out if you're human: <input name="bot-field" />
-        </label>
-      </p>
-      <input type="hidden" name="form-name" value="crentoon_studios" />
+    </section>
 
-      <input type="text" name="name" placeholder="Your Name" required
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
-      <input type="email" name="email" placeholder="Email Address" required
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
-      <input type="tel" name="phone" placeholder="Phone Number"
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
-      <select name="project_type"
-        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-orange-500 outline-none transition">
-        <option value="">Select Project Type</option>
-        <option value="promotional">Promotional</option>
-        <option value="documentary">Documentary</option>
-        <option value="music_video">Music Video</option>
-        <option value="event">Event Coverage</option>
-        <option value="other">Other</option>
-      </select>
-      <input type="text" name="budget" placeholder="Budget Range (e.g. $500–$1000)"
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
-      <textarea name="message" rows="5" placeholder="Project Details" required
-        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition"></textarea>
-      <input type="date" name="preferred_date"
-        class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-orange-500 outline-none transition" />
-      <button type="submit"
-        class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
-        Send Inquiry
-      </button>
-    </form>
-  </section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="bg-[#1a1a1a] py-16 px-6 md:px-12">
+        <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-2 items-center">
+            <!-- Bio & Story -->
+            <div>
+                <div data-reveal class="reveal">
 
-  <!-- FOOTER -->
-  <footer class="bg-[#1a1a1a] py-10 px-6 text-center text-gray-500 text-sm">
-    <!-- Social Icons -->
-    <div class="flex justify-center gap-6 mb-6">
-      <!-- Instagram -->
-      <a href="https://www.instagram.com/jarrid_camp/" target="_blank" aria-label="Instagram"
-        class="text-white hover:text-[#f97316] transition transform hover:scale-110 duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-          stroke-width="1.5">
-          <path d="M16 2H8a6 6 0 0 0-6 6v8a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6V8a6 6 0 0 0-6-6z" />
-          <circle cx="12" cy="12" r="3.2" />
-          <circle cx="18" cy="6" r="1.2" />
-        </svg>
-      </a>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Behind the Lens</h2>
+                    <p class="text-gray-400 mb-4">
+                        I'm Floyd, an independent videographer in Indianapolis. I work with local artists,
+                        musicians, small businesses, and people just like you to create visuals that feel as real as the
+                        places they 
+                        come from.
+                    </p>
+                    <p class="text-gray-400 mb-4">
+                        My style is raw but polished — urban documentary meets cinematic storytelling. Whether I'm
+                        shooting in a
+                        graffiti-covered alley or a packed venue, I aim to make every frame feel alive.
+                    </p>
+                    <p class="text-gray-400">
+                        I shoot primarily with Sony mirrorless gear and a lightweight gimbal rig, making me agile for
+                        fast-paced
+                        shoots without compromising quality.
+                    </p>
+                </div>
+            </div>
 
-      <!-- TikTok -->
-      <a href="https://www.tiktok.com/@crentoon?lang=en" target="_blank" aria-label="TikTok"
-        class="text-white hover:text-[#f97316] transition transform hover:scale-110 duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-          <path
-            d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
-        </svg>
-      </a>
+            <!-- Style Visual + Social Proof -->
+            <div class="flex flex-col items-center md:items-end text-center md:text-right">
+                <img src="../images/crentoon-logo.PNG" alt="Crentoon Studios Logo"
+                    class="w-64 h-64 object-cover rounded-md border-4 border-[#f97316] mb-6 shadow-lg" />
+                <div data-reveal class="reveal">
+                    <div class="text-sm text-gray-400 italic max-w-md">
+                        "Working with Floyd felt more like a creative partnership than a transaction. The results speak
+                        for
+                        themselves."
+                        <br />
+                        <span class="text-white font-semibold mt-2 block">– Helen Garett, Local Artist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACT & BOOKING SECTION -->
+    <section id="contact" class="bg-[#121212] py-16 px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+            <div data-reveal class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Let's Work Together</h2>
+                <p class="text-gray-400 text-lg">Tell me about your project and let's make something powerful.</p>
+            </div>
+        </div>
 
-      <!-- Threads -->
-      <a href="https://www.threads.com/@jarrid_camp?xmt=AQF0eJ3IY6jcrtuvUsc0FZMTfKTkLKhKoJY7Mpo7h9S96P4" target="_blank"
-        aria-label="Threads" class="text-white hover:text-[#f97316] transition transform hover:scale-110 duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 1200 1227" fill="currentColor">
-          <path
-            d="M597 0C267 0 0 267 0 597s267 597 597 597 597-267 597-597S927 0 597 0Zm186 940c-42 0-78-9-107-26-25-14-49-37-73-69-20 5-40 7-60 7-89 0-154-47-154-132 0-70 56-133 154-143v-29c0-35-13-60-38-70-21-9-52-4-76 12-28 18-44 47-44 79l-88-5c3-58 36-108 89-136 44-23 98-28 144-12 63 23 99 81 99 163v45c28 7 54 15 76 25 53 24 95 78 95 157 0 49-17 92-49 123-28 28-66 42-110 42Zm-66-267c-15-6-32-12-49-17v92c14 19 28 35 42 46 14 10 32 16 53 16 27 0 49-9 65-26 13-14 20-34 20-58 0-44-26-72-65-89l-1-1h-1l-1-1h-1l-1-1c-2-1-5-2-7-3Z" />
-        </svg>
-      </a>
-    </div>
+        <!-- Contact Form -->
+        <form name="crentoon_studios" method="POST" class="max-w-3xl mx-auto grid gap-6" data-netlify="true"
+            netlify-honeypot="bot-field">
 
-    <!-- Payment Button -->
-    <div class="mb-6">
-      <a href="../payment/?business=crentoon" 
-         class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#f97316] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-8 rounded-lg transition duration-300 shadow-lg transform hover:scale-105">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
-        </svg>
-        Make Payment
-      </a>
-    </div>
+            <p class="hidden">
+                <label>
+                    Don't fill this out if you're human: <input name="bot-field" />
+                </label>
+            </p>
+            <input type="hidden" name="form-name" value="crentoon_studios" />
 
-    <!-- Copyright -->
-    <p>© <span id="year">2025</span> Crentoon Studios — A local & real videographer. All rights reserved.</p>
-  </footer>
+            <input type="text" name="name" placeholder="Your Name" required
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
+            <input type="email" name="email" placeholder="Email Address" required
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
+            <input type="tel" name="phone" placeholder="Phone Number"
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
+            <select name="project_type"
+                class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-orange-500 outline-none transition">
+                <option value="">Select Project Type</option>
+                <option value="promotional">Promotional</option>
+                <option value="documentary">Documentary</option>
+                <option value="music_video">Music Video</option>
+                <option value="event">Event Coverage</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" name="budget" placeholder="Budget Range (e.g. $500–$1000)"
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition" />
+            <textarea name="message" rows="5" placeholder="Project Details" required
+                class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-orange-500 outline-none transition"></textarea>
+            <input type="date" name="preferred_date"
+                class="w-full p-3 rounded bg-[#1e1e1e] text-[#9ca3af] border border-gray-700 focus:border-orange-500 outline-none transition" />
+            <button type="submit"
+                class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-100">
+                Send Inquiry
+            </button>
+        </form>
+    </section>
 
-  <!-- Video Clips Script -->
-  <script src="./scripts/clips.js"></script>
+    <!-- FOOTER -->
+    <footer class="bg-[#1a1a1a] py-10 px-6 text-center text-gray-500 text-sm">
+        <!-- Social Icons -->
+        <div class="flex justify-center gap-6 mb-6">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/jarrid_camp/" target="_blank" aria-label="Instagram"
+                class="text-white hover:text-[#f97316] transition transform hover:scale-110 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="1.5">
+                    <path d="M16 2H8a6 6 0 0 0-6 6v8a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6V8a6 6 0 0 0-6-6z" />
+                    <circle cx="12" cy="12" r="3.2" />
+                    <circle cx="18" cy="6" r="1.2" />
+                </svg>
+            </a>
 
-  <!-- FINAL INTERACTIVITY SCRIPT -->
-  <script src="./scripts/main.js"></script>
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@crentoon?lang=en" target="_blank" aria-label="TikTok"
+                class="text-white hover:text-[#f97316] transition transform hover:scale-110 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                </svg>
+            </a>
 
-  <!-- Onload UX fade -->
-  <script>
-    window.addEventListener('DOMContentLoaded', function () {
-      document.body.classList.add('fade-in');
-    });
-  </script>
+            <!-- Threads -->
+            <a href="https://www.threads.com/@jarrid_camp?xmt=AQF0eJ3IY6jcrtuvUsc0FZMTfKTkLKhKoJY7Mpo7h9S96P4"
+                target="_blank" aria-label="Threads"
+                class="text-white hover:text-[#f97316] transition transform hover:scale-110 duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 1200 1227" fill="currentColor">
+                    <path
+                        d="M597 0C267 0 0 267 0 597s267 597 597 597 597-267 597-597S927 0 597 0Zm186 940c-42 0-78-9-107-26-25-14-49-37-73-69-20 5-40 7-60 7-89 0-154-47-154-132 0-70 56-133 154-143v-29c0-35-13-60-38-70-21-9-52-4-76 12-28 18-44 47-44 79l-88-5c3-58 36-108 89-136 44-23 98-28 144-12 63 23 99 81 99 163v45c28 7 54 15 76 25 53 24 95 78 95 157 0 49-17 92-49 123-28 28-66 42-110 42Zm-66-267c-15-6-32-12-49-17v92c14 19 28 35 42 46 14 10 32 16 53 16 27 0 49-9 65-26 13-14 20-34 20-58 0-44-26-72-65-89l-1-1h-1l-1-1h-1l-1-1c-2-1-5-2-7-3Z" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- Payment Button -->
+        <div class="mb-6">
+            <a href="../payment/?business=crentoon"
+                class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#f97316] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-8 rounded-lg transition duration-300 shadow-lg transform hover:scale-105">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 inline mr-2" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
+                </svg>
+                Make Payment
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <p>© <span id="year">2025</span> Crentoon Studios — A local & real videographer. All rights reserved.</p>
+    </footer>
+
+    <!-- Video Clips Script -->
+    <script src="./scripts/clips.js"></script>
+
+    <!-- FINAL INTERACTIVITY SCRIPT -->
+    <script src="./scripts/main.js"></script>
+
+    <!-- Onload UX fade -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function () {
+            document.body.classList.add('fade-in');
+        });
+    </script>
 </body>
 
 </html>

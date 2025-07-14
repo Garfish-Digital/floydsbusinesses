@@ -62,6 +62,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     transform-origin: 40% 57%;
 }
 
+.divider {
+    content: "🟥";
+}
+
 @media (min-width: 390px) {
     .hero-video {
         transform: scale(4.1);
