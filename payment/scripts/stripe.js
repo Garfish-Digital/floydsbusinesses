@@ -57,13 +57,13 @@ const businessConfig = {
       {
         id: 'water_softener',
         name: 'Water Softener Installation',
-        price: 1800,
+        price: '',
         description: 'Complete water softener system installation'
       },
       {
         id: 'water_heater',
         name: 'Water Heater Installation',
-        price: 1500,
+        price: '',
         description: 'New water heater installation and setup'
       }
     ]
