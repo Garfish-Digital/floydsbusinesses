@@ -45,7 +45,7 @@ const businessConfig = {
       {
         id: 'service_fee',
         name: 'Service Call Fee',
-        price: 87,
+        price: 96,
         description: 'Diagnostic fee that goes toward any work performed'
       },
       {
@@ -129,7 +129,7 @@ function createServiceElement(service) {
   
   serviceDiv.innerHTML = `
     <div class="service-title">${service.name}</div>
-    <div class="service-price">$${service.price.toLocaleString()}</div>
+    <div class="service-price">${service.price ? '$' : ''}${service.price.toLocaleString()}</div>
     <div class="service-description">${service.description}</div>
   `;
   
