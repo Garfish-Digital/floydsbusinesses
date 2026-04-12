@@ -73,6 +73,10 @@
                     class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold ms-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
                     Contact Me
                 </a>
+                <a href="#reviews-section"
+                    class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold ms-2 py-3 px-6 rounded transition duration-300 shadow-lg transform hover:scale-105">
+                    Reviews
+                </a>
             </div>
         </div>
     </section>
@@ -385,6 +389,102 @@
             </div>
         </div>
     </section>
+
+    <!-- CUSTOMER REVIEWS SECTION -->
+    <section id="reviews-section" class="bg-[#1a1a1a] py-16 px-6 md:px-12" data-site="crentoon_studios" data-accent="#f97316">
+        <div class="max-w-4xl mx-auto text-center mb-10">
+            <div data-reveal class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Client Reviews</h2>
+                <p class="text-gray-400 text-lg">See what our clients have to say.</p>
+            </div>
+        </div>
+
+        <!-- Scrollable reviews container -->
+        <div id="reviews-container" class="max-w-4xl mx-auto space-y-4 max-h-96 overflow-y-auto pr-2 mb-8">
+            <!-- Reviews loaded dynamically by reviews.js -->
+        </div>
+
+        <!-- Leave a Review button -->
+        <div class="text-center">
+            <button id="leave-review-btn"
+                class="inline-block bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 px-8 rounded transition duration-300 shadow-lg">
+                Leave a Review
+            </button>
+        </div>
+    </section>
+
+    <!-- REVIEW FORM MODAL -->
+    <div id="review-modal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/70 backdrop-blur-sm">
+        <div class="bg-[#1a1a1a] rounded-xl p-6 md:p-8 w-full max-w-md mx-4 border border-gray-700 relative max-h-[90vh] overflow-y-auto">
+            <button id="close-review-modal" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl leading-none">&times;</button>
+            <h3 class="text-2xl font-bold text-white mb-6">Leave a Review</h3>
+            <form id="review-form" class="space-y-4">
+                <!-- Honeypot (invisible to humans) -->
+                <input type="text" id="review-honeypot" name="website_url" class="hidden" tabindex="-1" autocomplete="off" />
+
+                <!-- Name -->
+                <div>
+                    <label for="review-name" class="block text-sm text-gray-400 mb-1">Name or nickname</label>
+                    <input type="text" id="review-name" required maxlength="50" placeholder="e.g. Big Jim"
+                        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-[#f97316] outline-none transition" />
+                </div>
+
+                <!-- Star Rating -->
+                <div>
+                    <label class="block text-sm text-gray-400 mb-1">Rating</label>
+                    <div id="star-rating" class="flex gap-1 text-3xl cursor-pointer select-none">
+                        <span data-star="1" class="text-gray-600 hover:text-yellow-400 transition">&#9733;</span>
+                        <span data-star="2" class="text-gray-600 hover:text-yellow-400 transition">&#9733;</span>
+                        <span data-star="3" class="text-gray-600 hover:text-yellow-400 transition">&#9733;</span>
+                        <span data-star="4" class="text-gray-600 hover:text-yellow-400 transition">&#9733;</span>
+                        <span data-star="5" class="text-gray-600 hover:text-yellow-400 transition">&#9733;</span>
+                    </div>
+                    <p id="rating-error" class="text-red-400 text-xs mt-1 hidden">Please select a rating.</p>
+                </div>
+
+                <!-- Comment -->
+                <div>
+                    <label for="review-comment" class="block text-sm text-gray-400 mb-1">Comment <span class="text-gray-600">(optional unless 1-star)</span></label>
+                    <textarea id="review-comment" rows="3" maxlength="300" placeholder="Share your experience..."
+                        class="w-full p-3 rounded bg-[#1e1e1e] text-white border border-gray-700 focus:border-[#f97316] outline-none transition resize-none"></textarea>
+                    <p id="char-count" class="text-gray-500 text-xs mt-1">300 characters remaining</p>
+                    <p id="comment-error" class="text-red-400 text-xs mt-1 hidden">A comment is required for 1-star ratings.</p>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 font-semibold py-3 rounded transition duration-300 shadow-lg">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- REVIEW CONFIRM MODAL -->
+    <div id="review-confirm-modal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/70 backdrop-blur-sm">
+        <div class="bg-[#1a1a1a] rounded-xl p-6 md:p-8 w-full max-w-md mx-4 border border-gray-700">
+            <h3 class="text-xl font-bold text-white mb-4">Confirm Your Review</h3>
+            <div class="bg-[#1e1e1e] rounded-lg p-4 border border-gray-700 mb-6">
+                <p class="font-semibold text-white mb-1" id="confirm-name"></p>
+                <div class="mb-2" id="confirm-stars"></div>
+                <p class="text-gray-400 text-sm" id="confirm-comment"></p>
+            </div>
+            <div class="flex gap-3">
+                <button id="confirm-edit-btn"
+                    class="flex-1 py-3 rounded border border-gray-600 text-gray-300 hover:text-black hover:bg-[#f5f5f5] transition font-semibold">
+                    Edit
+                </button>
+                <button id="confirm-submit-btn"
+                    class="flex-1 py-3 rounded bg-gradient-to-r from-[#7a1f1f] via-[#b42a2a] to-[#7a1f1f] text-white hover:brightness-110 transition font-semibold">
+                    Confirm
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- REVIEW TOAST NOTIFICATION -->
+    <div id="review-toast" class="hidden fixed bottom-6 left-1/2 -translate-x-1/2 px-6 py-3 rounded-lg text-white text-sm font-medium z-[60] opacity-0"></div>
+
     <!-- CONTACT & BOOKING SECTION -->
     <section id="contact" class="bg-[#121212] py-16 px-6 md:px-12">
         <div class="max-w-4xl mx-auto text-center mb-10">
@@ -484,6 +584,9 @@
         <!-- Copyright -->
         <p>© <span id="year">2025</span> Crentoon Studios — A local & real videographer. All rights reserved.</p>
     </footer>
+
+    <!-- Reviews Script -->
+    <script src="../scripts/reviews.js"></script>
 
     <!-- Video Clips Script -->
     <script src="./scripts/clips.js"></script>
