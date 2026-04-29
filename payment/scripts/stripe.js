@@ -6,7 +6,7 @@
 const businessConfig = {
   crentoon: {
     name: 'Crentoon Studios',
-    logo: '../images/crentoon-logo.PNG',
+    logo: '../images/crentoon-logo.webp',
     description: 'Professional videography and creative video production',
     theme: 'crentoon',
     services: [
@@ -38,7 +38,7 @@ const businessConfig = {
   },
   plumber: {
     name: 'The House Surgeon',
-    logo: '../images/house-surgeon-logo.PNG',
+    logo: '../images/house-surgeon-logo.webp',
     description: 'Professional plumbing services for residential and commercial properties',
     theme: 'plumber',
     services: [
